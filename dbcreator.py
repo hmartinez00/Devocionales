@@ -14,45 +14,56 @@ def create_connection(__db__):
         if conn:
             conn.close()
 
+def drop_table(__db__, __table__):
+	conn =  sqlite3.connect(__db__)
+	cursor = conn.cursor()
+	sql = f"DROP TABLE IF EXISTS {__table__}"
+	cursor.execute(sql)
+
 def create_table(__db__, __table__, __dict__):
 
-    sql = f" CREATE TABLE {__table__}("
-    for i in range(len(dict.keys())):
-        if i == 0:
-            sql = sql + f"\t{list(dict.keys())[i]} INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "
-        elif i < len(dict.keys()) - 1:
-            sql = sql + f"\t{list(dict.keys())[i]} {dict[list(dict.keys())[i]]}, "
-        else:
-            sql = sql + f"\t{list(dict.keys())[i]} {dict[list(dict.keys())[i]]});"
+	campos = list(__dict__.keys())
 
-    conn = sqlite3.connect(__db__)
-    try:
-        conn.execute(sql)
-        print(f"se creo la tabla {__table__}")                        
-    except sqlite3.OperationalError:
-        print(f"La tabla {__table__} ya existe!")                    
-    conn.close()
+	sql = f" CREATE TABLE {__table__}("
+
+	for i in range(len(campos)):
+		if i == 0:
+			sql = sql + f"{campos[i]} INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "
+		elif i < len(campos) - 1:
+			sql = sql + f"{campos[i]} {__dict__[campos[i]]}, "
+		else:
+			sql = sql + f"{campos[i]} {__dict__[campos[i]]});"
+
+	conn = sqlite3.connect(__db__)
+	cursor = conn.cursor()
+	cursor.execute(sql)
+	conn.close()
 
 def selectall(__db__, __table__):
-	conn=sqlite3.connect(__db__)
-	sql="select * from " + __table__
+	conn = sqlite3.connect(__db__)
+	sql="SELECT * FROM " + __table__
 	cursor=conn.execute(sql)	
 	cabeceras = get_column_names(__db__, __table__)
 	capturador=[]
 	for fila in cursor:
 		capturador.append(fila)
 	conn.close()
-	__dict__ = {
-		cabeceras: capturador
-	}
+	__dict__ = {}
+
+	for i in range(len(cabeceras)):
+		j_list = []
+		for j in range(len(capturador)):
+			j_list.append(capturador[j][i])
+		__dict__[cabeceras[i]] = j_list		
+
 	df = pd.DataFrame(__dict__)
-	print(df)
-	return(capturador)
+	df = df.set_index('Id')
+	return df
 	
 def selectone(__db__, __table__, __condition__):
 	con=sqlite3.connect(__db__)
-	sql="select * from " + __table__ + \
-	" where " + __condition__
+	sql="SELECT * FROM " + __table__ + \
+	" WHERE " + __condition__
 	cursor=con.execute(sql)	
 	filas=cursor.fetchall()
 	capturador=[]
@@ -63,7 +74,7 @@ def selectone(__db__, __table__, __condition__):
 	
 def get_column_names(__db__, __table__):
 	conn = sqlite3.connect(__db__)
-	sql = "select * from " + __table__
+	sql = "SELECT * FROM " + __table__
 	cursor = conn.execute(sql)
 	conn.close()
 	column_names = [desc[0] for desc in cursor.description]
@@ -83,34 +94,3 @@ def insert(__db__, __table__, __val__):
 	con.execute(sql, __val__)
 	con.commit()
 	con.close()
-
-
-
-
-database = r"2tim4_1.db"
-table = 'aguas_vivas'
-
-dict = {}
-dict['Id'] = 'PRIMARY'
-dict['Fecha'] = 'TEXT'
-dict['Versiculo'] = 'TEXT'
-dict['Subtitulo'] = 'TEXT'
-dict['Pasaje'] = 'TEXT'
-dict['Comentario'] = 'TEXT'
-
-# sql = f'create table {table}(\n'
-# for i in range(len(dict.keys())):
-# 	if i == 0:
-# 		sql = sql + f"\t{list(dict.keys())[i]} primary key autoincrement,\n"
-# 	elif i < len(dict.keys()) - 1:
-# 		sql = sql + f"\t{list(dict.keys())[i]} {dict[list(dict.keys())[i]]},\n"
-# 	else:
-# 		sql = sql + f"\t{list(dict.keys())[i]} {dict[list(dict.keys())[i]]}\n"
-# sql = sql + '\n);'
-
-# print(sql)
-
-
-# create_connection(database)
-create_table(database, table, dict)
-# selectall(database, table)

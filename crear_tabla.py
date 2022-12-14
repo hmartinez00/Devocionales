@@ -11,11 +11,11 @@ dict['Subtitulo'] = 'TEXT'
 dict['Pasaje'] = 'TEXT'
 dict['Comentario'] = 'TEXT'
 
-val = ('1','1','3','1','1',)
+# val = ('1','1','3','1','1',)
 
 # create_connection(database)
-# drop_table(database, table)
-# create_table(database, table, dict)
+drop_table(database, table)
+create_table(database, table, dict)
 # print(get_column_names(database, table))
 # insert(database, table, val)
 print(selectall(database, table))
