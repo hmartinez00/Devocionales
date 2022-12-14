@@ -5,19 +5,17 @@ from datetime import datetime as dt
 database = r"2tim4_1.db"
 table = 'aguas_vivas_comentarios'
 
-fecha = FechaID(dt.now())
+Fecha = FechaID(dt.now())
 
 Versiculo = input('Introduzca los Versiculos: ')
 Subtitulo = input('Introduzca el Subtitulo: ')
-# Pasaje = input('Introduzca el Pasaje: ')
-Comentario = input('Introduzca los Comentario: ')
+Texto = input('Introduzca los Texto: ')
 
 renglon = (
-    fecha,
+    Fecha,
     Versiculo,
     Subtitulo,
-    # Pasaje
-    Comentario
+    Texto
 )
 
 insert(database, table, renglon)

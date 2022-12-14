@@ -9,7 +9,7 @@ dict['Fecha'] = 'TEXT'
 dict['Versiculo'] = 'TEXT'
 dict['Subtitulo'] = 'TEXT'
 # dict['Pasaje'] = 'TEXT'
-dict['Comentario'] = 'TEXT'
+dict['Texto'] = 'TEXT'
 
 # val = ('1','1','3','1','1',)
 

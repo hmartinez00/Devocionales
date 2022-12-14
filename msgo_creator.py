@@ -5,7 +5,8 @@ from General_Utilities.fecha import FechaID
 from datetime import datetime as dt
 
 
-ahora = FechaID(dt.now())
+# ahora = FechaID(dt.now())
+ahora = input('Introduzca la fecha: ')
 
 # Definimos los source files
 ruta_archivo_json = 'settings.json'
