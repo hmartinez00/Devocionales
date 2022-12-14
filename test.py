@@ -1,21 +1,15 @@
-from dbcreator import *
+from ManageDB.sqlite_on_db import *
+import json
+from datetime import datetime as dt
+from General_Utilities.fecha import FechaID
+
+
+ahora = FechaID(dt.now())
 
 database = r"2tim4_1.db"
 table = 'aguas_vivas'
 
-dict = {}
-dict['Id'] = 'PRIMARY'
-dict['Fecha'] = 'TEXT'
-dict['Versiculo'] = 'TEXT'
-dict['Subtitulo'] = 'TEXT'
-dict['Pasaje'] = 'TEXT'
-dict['Comentario'] = 'TEXT'
+df = selectall(database, table)
+df = df[df['Fecha'] == ahora].reset_index()
 
-val = ('1','1','3','1','1',)
-
-# create_connection(database)
-# drop_table(database, table)
-# create_table(database, table, dict)
-# print(get_column_names(database, table))
-# insert(database, table, val)
-print(selectall(database, table))
+print(range(len(df)))

@@ -1,14 +1,14 @@
-from dbcreator import *
+from ManageDB.sqlite_on_db import *
 
 database = r"2tim4_1.db"
-table = 'aguas_vivas'
+table = 'aguas_vivas_comentarios'
 
 dict = {}
 dict['Id'] = 'PRIMARY'
 dict['Fecha'] = 'TEXT'
 dict['Versiculo'] = 'TEXT'
 dict['Subtitulo'] = 'TEXT'
-dict['Pasaje'] = 'TEXT'
+# dict['Pasaje'] = 'TEXT'
 dict['Comentario'] = 'TEXT'
 
 # val = ('1','1','3','1','1',)
