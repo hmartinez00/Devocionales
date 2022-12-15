@@ -1,17 +1,14 @@
 from ManageDB.sqlite_on_db import *
 
 database = r"2tim4_1.db"
-table = 'aguas_vivas_comentarios'
+table = 'aguas_vivas_pasajes'
 
 dict = {}
 dict['Id'] = 'PRIMARY'
 dict['Fecha'] = 'TEXT'
 dict['Versiculo'] = 'TEXT'
 dict['Subtitulo'] = 'TEXT'
-# dict['Pasaje'] = 'TEXT'
 dict['Texto'] = 'TEXT'
-
-# val = ('1','1','3','1','1',)
 
 # create_connection(database)
 drop_table(database, table)

@@ -1,5 +1,7 @@
 import json
 
+tabla = input('Ingrese el nombre del archivo: ')
+
 datos_json = \
 {
     "2022-12-15":
@@ -26,7 +28,7 @@ datos_json = \
     }
 }
 
-ruta_archivo_json = 'settings/aguas_vivas_pasajes.json'
+ruta_archivo_json = f'settings/{tabla}.json'
 
 with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
     json.dump(datos_json, archivo_json, indent=4)
