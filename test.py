@@ -4,12 +4,12 @@ from datetime import datetime as dt
 from General_Utilities.fecha import FechaID
 
 
-ahora = FechaID(dt.now())
+# Fecha = FechaID(dt.now())
+Fecha = "2022-12-16"
 
 database = r"2tim4_1.db"
-table = 'aguas_vivas'
+table = 'aguas_vivas_pasajes'
 
-df = selectall(database, table)
-df = df[df['Fecha'] == ahora].reset_index()
 
-print(range(len(df)))
+
+reset_count(database, table)
