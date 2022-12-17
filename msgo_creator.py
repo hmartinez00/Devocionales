@@ -1,18 +1,21 @@
-from ManageDB.sqlite_on_db import *
 import json
+import os
+from ManageDB.sqlite_on_db import *
 from MessagesKit.msgo import tg_msgo
 from General_Utilities.fecha import FechaID
+from General_Utilities.option_list import option_list
 from datetime import datetime as dt
+from str_msg_format import strmsgformat as strf
 
-
-# ahora = FechaID(dt.now())
-ahora = input('Introduzca la fecha: ')
+# Fecha = FechaID(dt.now())
+Fecha = input('Introduzca la fecha: ')
 
 # Definimos los source files
 ruta_archivo_json = 'settings.json'
 database = r"2tim4_1.db"
-table1 = 'aguas_vivas_pasajes'
-table2 = 'aguas_vivas_comentarios'
+tables = os.listdir('settings')
+table = option_list(tables)
+table = table.split('.json')[0]
 
 # Extraemos los datos de validacion requeridos del json
 with open(ruta_archivo_json) as archivo_json:
@@ -24,16 +27,24 @@ token = datos_json['telegram']['TELEGRAM_TOKEN']
 
 
 # Extraemos los datos de la base de datos
-df = selectall(database, table1)
-df = df[df['Fecha'] == ahora].reset_index()
+df = selectall(database, table)
+df = df[df['Fecha'] == Fecha].reset_index()
+
+print(df)
 
 for i in range(len(df)):
-    Versiculo = df['Versiculo'][i]
-    Subtitulo = df['Subtitulo'][i]
-    Pasaje = df['Pasaje'][i]
+    Ver = df['Titulo'][i]
+    Sub = df['Subtitulo'][i]
+    Tex = df['Texto'][i]
 
     # Construimos los mensajes
-    send_pasaje = f"*{Versiculo}*\n" + f"*{Subtitulo}*\n" + f"\n{Pasaje}"
+    send_pasaje = strf(
+            table,
+            Fecha,
+            Ver,
+            Sub,
+            Tex
+        ).msgtext()
 
     # Enviamos los mensajes
     bot = tg_msgo(
@@ -41,30 +52,6 @@ for i in range(len(df)):
         chat_id,
         token,
         send_pasaje,
-    )
-
-    bot.telegram_sender()
-
-
-
-
-# Extraemos los datos de la base de datos
-df = selectall(database, table2)
-df = df[df['Fecha'] == ahora].reset_index()
-
-for i in range(len(df)):
-    Versiculo = df['Versiculo'][i]
-    Subtitulo = df['Subtitulo'][i]
-    Comentario = df['Comentario'][i]
-
-    send_comentario = f"*{Versiculo}*\n" + f"*{Subtitulo} _(Comentario:)_*\n" + f"\n{Comentario}"
-
-    # Enviamos los mensajes
-    bot = tg_msgo(
-        url,
-        chat_id,
-        token,
-        send_comentario,
     )
 
     bot.telegram_sender()

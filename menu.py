@@ -6,7 +6,7 @@ subprocess.run('clear')
 
 opciones=[
 	'Crear tabla',
-	'Crear json de importacion',
+	'Actualizar json de importacion',
 	'Insertar renglon',
 	'Generar mensajes',
 	'Salir',

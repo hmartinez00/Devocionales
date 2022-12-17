@@ -1,8 +1,9 @@
-from General_Utilities.option_list import option_list
-import os
+import json
 
-files = os.listdir('settings')
+table = input('Introduzca el nombre de la nueva tabla: ')
 
-tabla = option_list(files)
+ruta_archivo_json = 'settings/' + table + '.json'
+datos_json = {}
 
-print(tabla)
+with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
+    json.dump(datos_json, archivo_json, indent=4)

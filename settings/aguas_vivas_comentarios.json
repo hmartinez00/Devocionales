@@ -1,7 +1,16 @@
 {
     "2022-12-16": {
-        "Ver": "Lucas 5:1-11",
+        "Tit": "Lucas 5:1-11",
         "Sub": "La pesca milagrosa",
-        "Tex": ""
+        "Tex": {
+            ".": "Ya lo dice la escritura: \n\nProTitbios: 3:5-6 \n\n5 F\u00edate de Jehov\u00e1 de todo tu coraz\u00f3n, Y no te apoyes en tu propia prudencia. \n6 Recon\u00f3celo en todos tus caminos, Y \u00e9l enderezar\u00e1 tus Titedas. "
+        }
+    },
+    "2022-12-17": {
+        "Tit": "Lucas 5:1-11",
+        "Sub": "La pesca milagrosa",
+        "Tex": {
+            ".": "Tal como lo declara la escritura:\n...\u00bfQui\u00e9n podr\u00e1 estar delante de Jehov\u00e1 el Dios santo? \u00bfA qui\u00e9n subir\u00e1 desde nosotros? 1 _(Samuel 6:20)_"
+        }
     }
 }

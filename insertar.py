@@ -1,21 +1,27 @@
-from ManageDB.sqlite_on_db import *
 import json
+import os
+from ManageDB.sqlite_on_db import *
 from datetime import datetime as dt
 from General_Utilities.fecha import FechaID
-
+from General_Utilities.option_list import option_list
 
 # Fecha = FechaID(dt.now())
 Fecha = input('Introduzca la fecha: ')
 
 database = r"2tim4_1.db"
-table = 'aguas_vivas_pasajes'
 
-ruta_archivo_json = 'settings/aguas_vivas_pasajes.json'
+tables = os.listdir('settings')
+table = option_list(tables)
+ruta_archivo_json = f'settings/{table}'
+
+# table = 'aguas_vivas_pasajes'
+table = table.split('.json')[0]
+
 
 with open(ruta_archivo_json) as archivo_json:
     datos_json = json.load(archivo_json)
 
-Ver = datos_json[Fecha]["Ver"]
+Tit = datos_json[Fecha]["Tit"]
 Sub = datos_json[Fecha]["Sub"]
 Tex = datos_json[Fecha]["Tex"]
 
@@ -24,7 +30,7 @@ for i in Tex.keys():
 
     renglon = (
         Fecha,
-        Ver,
+        Tit,
         Sub,
         texto
     )
