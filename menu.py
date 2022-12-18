@@ -4,7 +4,7 @@ from General_Utilities.option_list import option_list
 
 subprocess.run('clear')
 
-opciones=[
+opciones = [
 	'Crear tabla',
 	'Actualizar json de importacion',
 	'Insertar renglon',

@@ -12,7 +12,7 @@ ruta_archivo_json = f'settings/{tabla}'
 
 
 Fecha = input('Introduzca la fecha: ')
-Ver = input('Introduzca el pasaje: ')
+Tit = input('Introduzca el titulo: ')
 Sub = input('Introduzca el subtitulo: ')
 
 sub_param = {}
@@ -22,13 +22,13 @@ while pregunta == 's':
     if pregunta == 's':
         string = input('Introduzca el texto: ')
 
-        vers = string.split(' ')[0]
+        tex = string.split(' ')[0]
 
         new_string = ''
         for i in string.split(' ')[1:]:
             new_string = new_string + i + ' '
 
-        sub_param[vers] = new_string
+        sub_param[tex] = new_string
 
         pregunta = input('Desea continuar? (s/n) ')
     else:
@@ -36,7 +36,7 @@ while pregunta == 's':
 
 
 param = {}
-param["Ver"] = Ver
+param["Tit"] = Tit
 param["Sub"] = Sub
 param["Tex"] = sub_param
 
