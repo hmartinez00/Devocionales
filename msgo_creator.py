@@ -6,6 +6,7 @@ from General_Utilities.fecha import FechaID
 from General_Utilities.option_list import option_list
 from datetime import datetime as dt
 from str_msg_format import strmsgformat as strf
+from str_msg_format import buildmessage as bm
 
 # Fecha = FechaID(dt.now())
 Fecha = input('Introduzca la fecha: ')
@@ -26,32 +27,47 @@ chat_id = datos_json['telegram']['TELEGRAM_CHAT_ID']
 token = datos_json['telegram']['TELEGRAM_TOKEN']
 
 
-# Extraemos los datos de la base de datos
-df = selectall(database, table)
-df = df[df['Fecha'] == Fecha].reset_index()
+bm(
+    database,
+    table,
+    Fecha,
+    url,
+    chat_id,
+    token,
+).sender()
 
-print(df)
 
-for i in range(len(df)):
-    Ver = df['Titulo'][i]
-    Sub = df['Subtitulo'][i]
-    Tex = df['Texto'][i]
 
-    # Construimos los mensajes
-    send_pasaje = strf(
-            table,
-            Fecha,
-            Ver,
-            Sub,
-            Tex
-        ).msgtext()
 
-    # Enviamos los mensajes
-    bot = tg_msgo(
-        url,
-        chat_id,
-        token,
-        send_pasaje,
-    )
 
-    bot.telegram_sender()
+
+# # Extraemos los datos de la base de datos
+# df = selectall(database, table)
+# df = df[df['Fecha'] == Fecha].reset_index()
+
+# print(df)
+
+
+# for i in range(len(df)):
+#     Tit = df['Titulo'][i]
+#     Sub = df['Subtitulo'][i]
+#     Tex = df['Texto'][i]
+
+#     # Construimos los mensajes
+#     send_pasaje = strf(
+#             table,
+#             Fecha,
+#             Tit,
+#             Sub,
+#             Tex
+#         ).msgtext()
+
+#     # Enviamos los mensajes
+#     bot = tg_msgo(
+#         url,
+#         chat_id,
+#         token,
+#         send_pasaje,
+#     )
+
+#     bot.telegram_sender()
