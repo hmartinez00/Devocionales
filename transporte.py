@@ -1,19 +1,23 @@
-import json
 import os
+import json
 from General_Utilities.option_list import option_list
 
 files = os.listdir('settings')
-
 tabla = option_list(files)
-
 print(tabla)
-
 ruta_archivo_json = f'settings/{tabla}'
 
 
 Fecha = input('Introduzca la fecha: ')
 Tit = input('Introduzca el titulo: ')
 Sub = input('Introduzca el subtitulo: ')
+
+keys_type = input('Desea generar claves automaticas? (S/N): ')
+
+if keys_type == 's' or 'S':
+    keys_type = 0
+else:
+    keys_type = None
 
 sub_param = {}
 
@@ -22,13 +26,22 @@ while pregunta == 's':
     if pregunta == 's':
         string = input('Introduzca el texto: ')
 
-        tex = string.split(' ')[0]
+        if keys_type == None:
 
-        new_string = ''
-        for i in string.split(' ')[1:]:
-            new_string = new_string + i + ' '
+            tex = string.split(' ')[0]
 
-        sub_param[tex] = new_string
+            new_string = ''
+            for i in string.split(' ')[1:]:
+                new_string = new_string + i + ' '
+
+            sub_param[tex] = new_string
+        
+        elif keys_type != None:
+            keys_type = keys_type + 1
+            tex = str(keys_type) + '.'
+            print(tex + ' ' + string)
+            sub_param[tex] = string
+
 
         pregunta = input('Desea continuar? (s/n) ')
     else:
