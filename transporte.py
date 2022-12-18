@@ -14,9 +14,9 @@ Sub = input('Introduzca el subtitulo: ')
 
 keys_type = input('Desea generar claves automaticas? (S/N): ')
 
-if keys_type == 's' or 'S':
+if keys_type == 's' or keys_type == 'S':
     keys_type = 0
-elif keys_type == 'n' or 'N':
+elif keys_type == 'n' or keys_type == 'N':
     keys_type = None
 
 sub_param = {}
