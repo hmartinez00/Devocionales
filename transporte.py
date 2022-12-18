@@ -16,7 +16,7 @@ keys_type = input('Desea generar claves automaticas? (S/N): ')
 
 if keys_type == 's' or 'S':
     keys_type = 0
-else:
+elif keys_type == 'n' or 'N':
     keys_type = None
 
 sub_param = {}

@@ -32,5 +32,13 @@
             "10": "...Jes\u00fas dijo a Sim\u00f3n: No temas; desde ahora ser\u00e1s pescador de hombres. ",
             "11": "Y cuando trajeron a tierra las barcas, dej\u00e1ndolo todo, le siguieron. "
         }
+    },
+    "2022-12-19": {
+        "Tit": "Lucas 5:12-16",
+        "Sub": "Jes\u00fas sana a un leproso",
+        "Tex": {
+            "12":"Sucedi\u00f3 que estando \u00e9l en una de las ciudades, se present\u00f3 un hombre lleno de lepra, el cual, viendo a Jes\u00fas, se postr\u00f3 con el rostro en tierra y le rog\u00f3, diciendo: Se\u00f1or, si quieres, puedes limpiarme.",
+            "13":"Entonces, extendiendo \u00e9l la mano, le toc\u00f3, diciendo: Quiero; s\u00e9 limpio. Y al instante la lepra se fue de \u00e9l."
+        }
     }
 }
