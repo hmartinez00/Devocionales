@@ -37,8 +37,30 @@
         "Tit": "Lucas 5:12-16",
         "Sub": "Jes\u00fas sana a un leproso",
         "Tex": {
-            "12":"Sucedi\u00f3 que estando \u00e9l en una de las ciudades, se present\u00f3 un hombre lleno de lepra, el cual, viendo a Jes\u00fas, se postr\u00f3 con el rostro en tierra y le rog\u00f3, diciendo: Se\u00f1or, si quieres, puedes limpiarme.",
-            "13":"Entonces, extendiendo \u00e9l la mano, le toc\u00f3, diciendo: Quiero; s\u00e9 limpio. Y al instante la lepra se fue de \u00e9l."
+            "12": "Sucedi\u00f3 que estando \u00e9l en una de las ciudades, se present\u00f3 un hombre lleno de lepra, el cual, viendo a Jes\u00fas, se postr\u00f3 con el rostro en tierra y le rog\u00f3, diciendo: Se\u00f1or, si quieres, puedes limpiarme.",
+            "13": "Entonces, extendiendo \u00e9l la mano, le toc\u00f3, diciendo: Quiero; s\u00e9 limpio. Y al instante la lepra se fue de \u00e9l."
+        }
+    },
+    "2022-12-21": {
+        "Tit": "Lucas 5:17-26",
+        "Sub": "Jes\u00fas sana a un paral\u00edtico",
+        "Tex": {
+            "17": "Aconteci\u00f3 un d\u00eda, que \u00e9l estaba ense\u00f1ando, y estaban sentados los fariseos y doctores de la ley, los cuales hab\u00edan venido de todas las aldeas de Galilea, de Judea y Jerusal\u00e9n; y el poder del Se\u00f1or estaba con \u00e9l para sanar. ",
+            "18": "Y sucedi\u00f3 que unos hombres que tra\u00edan en un lecho a un hombre que estaba paral\u00edtico, procuraban llevarle adentro y ponerle delante de \u00e9l. ",
+            "19": "Pero no hallando c\u00f3mo hacerlo a causa de la multitud, subieron encima de la casa, y por el tejado le bajaron con el lecho, poni\u00e9ndole en medio, delante de Jes\u00fas. ",
+            "20": "Al ver \u00e9l la fe de ellos, le dijo: Hombre, tus pecados te son perdonados. "
+        }
+    },
+    "2022-12-22": {
+        "Tit": "Lucas 5:17-26",
+        "Sub": "Jes\u00fas sana a un paral\u00edtico",
+        "Tex": {
+            "21": "Entonces los escribas y los fariseos comenzaron a cavilar, diciendo: \u00bfQui\u00e9n es \u00e9ste que habla blasfemias? \u00bfQui\u00e9n puede perdonar pecados sino s\u00f3lo Dios?  ",
+            "22": "Jes\u00fas entonces, conociendo los pensamientos de ellos, respondiendo les dijo: \u00bfQu\u00e9 cavil\u00e1is en vuestros corazones?  ",
+            "23": "\u00bfQu\u00e9 es m\u00e1s f\u00e1cil, decir: Tus pecados te son perdonados, o decir: Lev\u00e1ntate y anda?  ",
+            "24": "Pues para que sep\u00e1is que el Hijo del Hombre tiene potestad en la tierra para perdonar pecados (dijo al paral\u00edtico): A ti te digo: Lev\u00e1ntate, toma tu lecho, y vete a tu casa.s ",
+            "25": "Al instante, levantándose en presencia de ellos, y tomando el lecho en que estaba acostado, se fue a su casa, glorificando a Dios.",
+            "26": "Y todos, sobrecogidos de asombro, glorificaban a Dios; y llenos de temor, decían: Hoy hemos visto maravillas. "
         }
     }
 }
