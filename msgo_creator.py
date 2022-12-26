@@ -5,8 +5,8 @@ from MessagesKit.msgo import tg_msgo
 from General_Utilities.fecha import FechaID
 from General_Utilities.option_list import option_list
 from datetime import datetime as dt
-from str_msg_format import strmsgformat as strf
-from str_msg_format import buildmessage as bm
+from MessagesKit.str_msg_format import strmsgformat as strf
+from MessagesKit.str_msg_format import buildmessage as bm
 
 # Fecha = FechaID(dt.now())
 Fecha = input('Introduzca la fecha: ')
