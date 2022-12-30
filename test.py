@@ -1,14 +1,11 @@
-import webbrowser
-import speech_recognition as sr
+from General_Utilities.speech_recognizer import Reconocimiento
 
-r = sr.Recognizer()
-with sr.Microphone() as source:
-    print('Hola soy tu asistente de voz: ')
-    audio = r.listen(source)
+valor = False
 
-try:
-    text = r.recognize_google(audio)
-    print(f'Haz dicho: {text}')
-    print(text)
-except:
-    print('No te he entendido')
+while valor == False:
+    Reconocimiento()
+    pregunta = input('\nCoincide con lo dicho? (S/N): ')
+    if pregunta == 's' or pregunta == 'S':
+        valor = True
+    elif pregunta == 'n' or pregunta == 'N':
+        continue
