@@ -1,4 +1,10 @@
-tengo problemas con los acentos y la codificación utf-8nueva líneanueva línea
-está debería ir en la segunda línea
-esto debería ir a una tercera línea
-hora de almorzar
+nueva prueba
+primera línea
+Esta es una prueba de dictado
+permitirá determinar si es posible
+crear un asistente de voz
+que facilite
+el desarrollo de devocionales para mi familia
+tengo que mejorar
+la inserción de información
+finalizar dictado
