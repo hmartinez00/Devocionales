@@ -1,1 +1,4 @@
-ya podemos Conectar a la app de reconocimiento de voz de Google y transmitir a un archivo
+tengo problemas con los acentos y la codificación utf-8nueva líneanueva línea
+está debería ir en la segunda línea
+esto debería ir a una tercera línea
+hora de almorzar
