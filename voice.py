@@ -23,8 +23,7 @@ while valor == False:
         objeto = orders(file, dictado)
         
         if objeto.close_options():
-            break
-        
+            break        
         objeto.continue_options()
         objeto.clear()       
     
