@@ -1,0 +1,1 @@
+ya podemos Conectar a la app de reconocimiento de voz de Google y transmitir a un archivo
