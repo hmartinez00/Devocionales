@@ -1,0 +1,4 @@
+ Hola nuevamente
+ Esta es otra prueba separando el archivo algoritmo para el reconocimiento de voz con los algoritmos para el reconocimiento de voz
+
+ he introducido todos los algoritmos en un mï¿½dulo  dentro del paquete generado General_Utilities no hables falso testimonio contra tu prójimo
