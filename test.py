@@ -1,9 +1,14 @@
-import json
+import webbrowser
+import speech_recognition as sr
 
-table = input('Introduzca el nombre de la nueva tabla: ')
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    print('Hola soy tu asistente de voz: ')
+    audio = r.listen(source)
 
-ruta_archivo_json = 'settings/' + table + '.json'
-datos_json = {}
-
-with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
-    json.dump(datos_json, archivo_json, indent=4)
+try:
+    text = r.recognize_google(audio)
+    print(f'Haz dicho: {text}')
+    print(text)
+except:
+    print('No te he entendido')
