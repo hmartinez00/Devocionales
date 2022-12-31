@@ -1,7 +1,17 @@
 {
-    "voice_optiones":{
-        "close":["a"],
-        "secuence":["b"],
-        "clear":["c"]
+    "voice_optiones": {
+        "close": [
+            "finalizar dictado",
+            "finalizar comunicaci\u00f3n",
+            "cerrar comunicaci\u00f3n",
+            "cierra comunicaci\u00f3n"
+        ],
+        "secuence": [
+            ["nueva l\u00ednea", "\n"],
+            ["nuevo p\u00e1rrafo", "\n\n"]
+        ],
+        "clear": [
+            "borrar todo"
+        ]
     }
 }
