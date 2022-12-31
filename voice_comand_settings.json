@@ -1,0 +1,7 @@
+{
+    "voice_optiones":{
+        "close":["a"],
+        "secuence":["b"],
+        "clear":["c"]
+    }
+}
