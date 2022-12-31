@@ -9,7 +9,8 @@ with open(ruta_archivo_json) as archivo_json:
     datos_json = json.load(archivo_json)
 
 close_options = datos_json['voice_optiones']['close']
-secuence_options = datos_json['voice_optiones']['secuence']
+secuence_optionsA = datos_json['voice_optiones']['secuence'][0]
+secuence_optionsB = datos_json['voice_optiones']['secuence'][1]
 clear_options = datos_json['voice_optiones']['clear']
 
 
@@ -36,7 +37,7 @@ while valor == False:
         
         if objeto.close_options(close_options):
             break        
-        objeto.secuence_options(secuence_options)
+        objeto.secuence_options(secuence_optionsA, secuence_optionsB)
         objeto.clear(clear_options)
     
     except:    
