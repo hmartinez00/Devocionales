@@ -1,0 +1,3 @@
+ abrimos comunicación con la Api de Google
+
+ abrimos de nuevo comunicación con la Api de Google

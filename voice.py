@@ -9,8 +9,10 @@ if os.path.isfile(file):
 else:
     os.mkdir('temp')
     string = ''
-    f = open(file, 'w')
-    f.write(string)
+
+    # f = open(file, 'w')
+    with open(file, 'w', encoding='utf-8') as f:
+        f.write(string)
     f.close()
 
 valor = False
