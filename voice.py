@@ -1,6 +1,6 @@
 import os
-from General_Utilities.speech_recognizer import Reconocimiento
-from General_Utilities.speech_recognizer import orders
+from Eliezer.speech_recognizer import Reconocimiento
+from Eliezer.speech_recognizer import orders
 
 file = 'temp/temp.txt'
 
