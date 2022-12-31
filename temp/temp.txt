@@ -1,9 +1,0 @@
- a continuación ejecutamos otra prueba.
-
- hemos logrado ensartar dos puntos: precio signos de puntuación!
-
- queda por incorporar herramientas de corrección.
-
-
-
- entre tanto tenemos que hacer las correcciones empleando el teclado( claramente el motor de reconocimiento de voz de Google es mucho más potente el de Microsoft, sin embargo sé depende de una conexión estable a internet).
