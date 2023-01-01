@@ -1,10 +1,13 @@
-import json
+from General_Utilities.control_rutas import setting_routes
 
-ruta_archivo_json = 'voice_comand_settings.json'
 
-with open(ruta_archivo_json) as archivo_json:
-    datos_json = json.load(archivo_json)
+key = 'voice'
+prefix = ''
+sufix = '.json'
+ruta_archivo_json = setting_routes(
+    key,
+    prefix,
+    sufix,
+)
 
-secuence_options = datos_json['voice_optiones']['secuence']
-
-print(secuence_options[0][0])
+print(ruta_archivo_json)

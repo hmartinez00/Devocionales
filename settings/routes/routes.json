@@ -1,0 +1,15 @@
+{
+    "sender": [
+        "settings"
+    ],
+    "tables": [
+        "aguas_vivas_comentarios",
+        "aguas_vivas_pasajes",
+        "preguntas_la_buena_semilla",
+        "preguntas_lecturas",
+        "proverbios"
+    ],
+    "voice": [
+        "voice_comand_settings"
+    ]
+}
