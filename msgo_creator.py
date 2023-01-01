@@ -12,9 +12,9 @@ from MessagesKit.str_msg_format import buildmessage as bm
 Fecha = input('Introduzca la fecha: ')
 
 # Definimos los source files
-ruta_archivo_json = 'settings.json'
+ruta_archivo_json = 'settings/sender/settings.json'
 database = r"2tim4_1.db"
-tables = os.listdir('settings')
+tables = os.listdir('settings/tables')
 table = option_list(tables)
 table = table.split('.json')[0]
 
@@ -35,39 +35,3 @@ bm(
     chat_id,
     token,
 ).sender()
-
-
-
-
-
-
-# # Extraemos los datos de la base de datos
-# df = selectall(database, table)
-# df = df[df['Fecha'] == Fecha].reset_index()
-
-# print(df)
-
-
-# for i in range(len(df)):
-#     Tit = df['Titulo'][i]
-#     Sub = df['Subtitulo'][i]
-#     Tex = df['Texto'][i]
-
-#     # Construimos los mensajes
-#     send_pasaje = strf(
-#             table,
-#             Fecha,
-#             Tit,
-#             Sub,
-#             Tex
-#         ).msgtext()
-
-#     # Enviamos los mensajes
-#     bot = tg_msgo(
-#         url,
-#         chat_id,
-#         token,
-#         send_pasaje,
-#     )
-
-#     bot.telegram_sender()

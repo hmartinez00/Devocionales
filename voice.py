@@ -1,7 +1,7 @@
 from Eliezer.voice import recognizer
 
 
-ruta_archivo_json = 'voice_comand_settings.json'
+ruta_archivo_json = 'settings/voice/voice_comand_settings.json'
 
 recognizer(ruta_archivo_json)
 

@@ -10,9 +10,9 @@ Fecha = input('Introduzca la fecha: ')
 
 database = r"2tim4_1.db"
 
-tables = os.listdir('settings')
+tables = os.listdir('settings/tables')
 table = option_list(tables)
-ruta_archivo_json = f'settings/{table}'
+ruta_archivo_json = f'settings/tables/{table}'
 
 # table = 'aguas_vivas_pasajes'
 table = table.split('.json')[0]

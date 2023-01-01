@@ -5,7 +5,7 @@ from ManageDB.sqlite_on_db import *
 database = r"2tim4_1.db"
 table = input('Introduzca el nombre de la nueva tabla: ')
 
-ruta_archivo_json = 'settings/' + table + '.json'
+ruta_archivo_json = 'settings/tables/' + table + '.json'
 datos_json = {}
 
 with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
