@@ -4,18 +4,23 @@ from ManageDB.sqlite_on_db import *
 from datetime import datetime as dt
 from General_Utilities.fecha import FechaID
 from General_Utilities.option_list import option_list
+from General_Utilities.control_rutas import setting_routes
+
 
 # Fecha = FechaID(dt.now())
 Fecha = input('Introduzca la fecha: ')
 
 database = r"2tim4_1.db"
 
-tables = os.listdir('settings/tables')
-table = option_list(tables)
-ruta_archivo_json = f'settings/tables/{table}'
+key = 'tables'
+prefix = None
+sufix = '.json'
+tables = setting_routes(key, prefix, sufix)
+option = option_list(tables)
+table = option[0]
+ruta_archivo_json = option[1]
 
-# table = 'aguas_vivas_pasajes'
-table = table.split('.json')[0]
+print(ruta_archivo_json)
 
 
 with open(ruta_archivo_json) as archivo_json:

@@ -1,11 +1,23 @@
 import os
 import json
+from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
 
-files = os.listdir('settings')
-tabla = option_list(files)
-print(tabla)
-ruta_archivo_json = f'settings/{tabla}'
+
+# files = os.listdir('settings')
+
+# tabla = option_list(files)
+# print(tabla)
+# ruta_archivo_json = f'settings/{tabla}'
+
+key = 'tables'
+prefix = None
+sufix = '.json'
+tables = setting_routes(key, prefix, sufix)
+option = option_list(tables)
+ruta_archivo_json = option[1]
+
+print(ruta_archivo_json)
 
 
 Fecha = input('Introduzca la fecha: ')
