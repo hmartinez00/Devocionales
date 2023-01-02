@@ -15,9 +15,7 @@ Fecha = input('Introduzca la fecha: ')
 
 # Definimos los source files
 key = 'sender'
-prefix = None
-sufix = '.json'
-ruta_archivo_json = setting_routes(key, prefix, sufix)[0][1]
+ruta_archivo_json = setting_routes(key)[0]
 print(ruta_archivo_json)
 
 database = r"2tim4_1.db"
@@ -31,11 +29,9 @@ chat_id = datos_json['telegram']['TELEGRAM_CHAT_ID']
 token = datos_json['telegram']['TELEGRAM_TOKEN']
 
 key = 'tables'
-prefix = 'settings/tables/'
-sufix = '.json'
-tables = setting_routes(key, prefix, sufix)
+tables = setting_routes(key)
 option = option_list(tables)
-table = option[0]
+table = option.split('/')[-1].split('.')[0]
 
 bm(
     database,

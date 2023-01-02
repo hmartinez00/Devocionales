@@ -1,29 +1,21 @@
 {
     "sender": [
-        "settings"
+        "settings/sender/settings.json"
     ],
     "tables": [
-        "aguas_vivas_comentarios",
-        "aguas_vivas_pasajes",
-        "preguntas_la_buena_semilla",
-        "preguntas_lecturas",
-        "proverbios"
+        "settings/tables/aguas_vivas_comentarios.json",
+        "settings/tables/aguas_vivas_pasajes.json",
+        "settings/tables/preguntas_la_buena_semilla.json",
+        "settings/tables/preguntas_lecturas.json",
+        "settings/tables/proverbio.jsons"
     ],
     "voice": [
-        "voice_comand_settings"
+        "settings/voice/voice_comand_settings.json"
     ],
     "exec": [
-        [
-            "Crear tabla",
-            "Actualizar json de importacion",
-            "Insertar renglon",
-            "Generar mensajes"
-        ],
-        [
-            "crear_tabla.py",
-            "transporte.py",
-            "insertar.py",
-            "msgo_creator.py"
-        ]
+        "crear_tabla.py",
+        "transporte.py",
+        "insertar.py",
+        "msgo_creator.py"
     ]
 }

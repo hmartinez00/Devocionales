@@ -13,12 +13,9 @@ Fecha = input('Introduzca la fecha: ')
 database = r"2tim4_1.db"
 
 key = 'tables'
-prefix = None
-sufix = '.json'
-tables = setting_routes(key, prefix, sufix)
-option = option_list(tables)
-table = option[0]
-ruta_archivo_json = option[1]
+tables = setting_routes(key)
+ruta_archivo_json = option_list(tables)
+table = ruta_archivo_json.split('/')[-1].split('.')[0]
 
 print(ruta_archivo_json)
 
