@@ -7,7 +7,7 @@
         "settings/tables/aguas_vivas_pasajes.json",
         "settings/tables/preguntas_la_buena_semilla.json",
         "settings/tables/preguntas_lecturas.json",
-        "settings/tables/proverbio.jsons"
+        "settings/tables/proverbios.json"
     ],
     "voice": [
         "settings/voice/voice_comand_settings.json"
