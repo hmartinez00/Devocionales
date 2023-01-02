@@ -15,14 +15,14 @@
     "exec": [
         [
             "Crear tabla",
-            "Actualizar json de importacion",
-            "Insertar renglon",
+            "Activar ingreso por voz",
+            "Actualizar base de datos",
             "Generar mensajes"
         ],
         [
             "crear_tabla.py",
+            "voice.py",
             "transporte.py",
-            "insertar.py",
             "msgo_creator.py"
         ]
     ]

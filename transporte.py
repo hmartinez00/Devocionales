@@ -2,7 +2,10 @@ import json
 from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
 from General_Utilities.fecha import format_FechaID
+from modules.insertar_module import importar
 
+
+database = r"2tim4_1.db"
 
 key = 'tables'
 tables = setting_routes(key)
@@ -78,3 +81,6 @@ datos_json[Fecha] = param
 
 with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
     json.dump(datos_json, archivo_json, indent=4)
+
+
+importar(database, ruta_archivo_json, Fecha)
