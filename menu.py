@@ -1,4 +1,3 @@
-import os
 import subprocess
 from General_Utilities.option_list import option_list
 from General_Utilities.control_rutas import setting_routes
@@ -6,25 +5,20 @@ from General_Utilities.control_rutas import setting_routes
 
 subprocess.run('cls', shell=True)
 
-opciones = [
-	'Crear tabla',
-	'Actualizar json de importacion',
-	'Insertar renglon',
-	'Generar mensajes',
-	'Salir',
-]
+key = 'exec'
+opciones = setting_routes(key)[0]
+acciones = setting_routes(key)[1]
+opciones.append("Salir")
 
 opcion = option_list(opciones)
 
-if opcion==opciones[0]:
-	exec(open("crear_tabla.py").read())
-elif opcion==opciones[1]:
-	exec(open("transporte.py").read())
-elif opcion==opciones[2]:
-	exec(open("insertar.py").read())
-elif opcion==opciones[3]:
-	exec(open("msgo_creator.py").read())
-elif opcion==opciones[4]:
+for i in range(len(opciones)):
+	if opcion == opciones[i]:
+		j = i
+
+if j < len(opciones) - 1:
+	exec(open(acciones[j]).read())
+elif j == len(opciones) - 1:
 	print('Adios!')
 else:
 	print('\nOpcion Invalida! Repita la eleccion.\n')

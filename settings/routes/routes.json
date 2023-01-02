@@ -13,9 +13,17 @@
         "settings/voice/voice_comand_settings.json"
     ],
     "exec": [
-        "crear_tabla.py",
-        "transporte.py",
-        "insertar.py",
-        "msgo_creator.py"
+        [
+            "Crear tabla",
+            "Actualizar json de importacion",
+            "Insertar renglon",
+            "Generar mensajes"
+        ],
+        [
+            "crear_tabla.py",
+            "transporte.py",
+            "insertar.py",
+            "msgo_creator.py"
+        ]
     ]
 }
