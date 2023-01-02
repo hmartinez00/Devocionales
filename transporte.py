@@ -1,7 +1,7 @@
-import os
 import json
 from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
+from General_Utilities.fecha import format_FechaID
 
 
 key = 'tables'
@@ -12,6 +12,7 @@ print(ruta_archivo_json)
 
 
 Fecha = input('Introduzca la fecha: ')
+Fecha = format_FechaID(Fecha)
 Tit = input('Introduzca el titulo: ')
 Sub = input('Introduzca el subtitulo: ')
 
@@ -55,8 +56,6 @@ param = {}
 param["Tit"] = Tit
 param["Sub"] = Sub
 param["Tex"] = sub_param
-
-# print(param)
 
 
 with open(ruta_archivo_json) as archivo_json:

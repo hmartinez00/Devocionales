@@ -1,14 +1,12 @@
 import json
-import os
 from ManageDB.sqlite_on_db import *
-from datetime import datetime as dt
-from General_Utilities.fecha import FechaID
+from General_Utilities.fecha import format_FechaID
 from General_Utilities.option_list import option_list
 from General_Utilities.control_rutas import setting_routes
 
 
-# Fecha = FechaID(dt.now())
 Fecha = input('Introduzca la fecha: ')
+Fecha = format_FechaID(Fecha)
 
 database = r"2tim4_1.db"
 

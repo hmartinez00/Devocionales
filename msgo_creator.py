@@ -1,17 +1,14 @@
 import json
-import os
 from ManageDB.sqlite_on_db import *
-from MessagesKit.msgo import tg_msgo
-from General_Utilities.fecha import FechaID
+from General_Utilities.fecha import format_FechaID
 from General_Utilities.option_list import option_list
-from datetime import datetime as dt
-from MessagesKit.str_msg_format import strmsgformat as strf
-from MessagesKit.str_msg_format import buildmessage as bm
 from General_Utilities.control_rutas import setting_routes
+from MessagesKit.str_msg_format import buildmessage as bm
 
 
 # Fecha = FechaID(dt.now())
 Fecha = input('Introduzca la fecha: ')
+Fecha = format_FechaID(Fecha)
 
 # Definimos los source files
 key = 'sender'

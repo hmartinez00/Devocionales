@@ -1,7 +1,5 @@
-from General_Utilities.control_rutas import setting_routes
+from datetime import datetime as dt
+from General_Utilities.fecha import format_FechaID
 
-
-key = 'exec'
-ruta_archivo_json = setting_routes(key)
-
-print(ruta_archivo_json)
+ahora = '20230104'
+print(format_FechaID(ahora))
