@@ -1,1 +1,3 @@
  Confía en el señor y no en tu propia prudencia reconócelo en todos tus caminos y el enderezará tus veredas.
+
+ vamos a ejecutar varias pruebas con el reconocedor de voz.
