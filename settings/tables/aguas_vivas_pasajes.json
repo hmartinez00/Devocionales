@@ -123,5 +123,17 @@
         "Tex": {
             "15": "La necedad est\u00e1 ligada en el coraz\u00f3n del muchacho; Mas la vara de la correcci\u00f3n la alejar\u00e1 de \u00e9l. "
         }
+<<<<<<< HEAD
+=======
+    },
+    "2023-01-03": {
+        "Tit": "Lucas 6:46-49",
+        "Sub": "Los dos cimientos",
+        "Tex": {
+            "46": "\u00bfPor qu\u00e9 me llam\u00e1is, Se\u00f1or, Se\u00f1or, y no hac\u00e9is lo que yo digo? 47 Todo aquel que viene a m\u00ed, y oye mis palabras y las hace, os indicar\u00e9 a qui\u00e9n es semejante. ",
+            "48": "Semejante es al hombre que al edificar una casa, cav\u00f3 y ahond\u00f3 y puso el fundamento sobre la roca; y cuando vino una inundaci\u00f3n, el r\u00edo dio con \u00edmpetu contra aquella casa, pero no la pudo mover, porque estaba fundada sobre la roca. ",
+            "49": "Mas el que oy\u00f3 y no hizo, semejante es al hombre que edific\u00f3 su casa sobre tierra, sin fundamento; contra la cual el r\u00edo dio con \u00edmpetu, y luego cay\u00f3, y fue grande la ruina de aquella casa. "
+        }
+>>>>>>> 06274f5452c1d2faace0bf1858d0d5651a922a52
     }
 }

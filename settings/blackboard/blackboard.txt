@@ -1,4 +1,7 @@
+<<<<<<< HEAD
  Titulo
  Subtitulo
  linea1
  linea2
+=======
+>>>>>>> 06274f5452c1d2faace0bf1858d0d5651a922a52
