@@ -38,7 +38,7 @@ if keys_type == 's' or keys_type == 'S':
     tex = [i + 1 for i in range(len(Texto))]
 elif keys_type == 'n' or keys_type == 'N':
     tex = [Texto[i].split(' ')[0] for i in range(len(Texto))]
-    Texto = [Texto[i].split(' ')[1] for i in range(len(Texto))]
+    Texto = [Texto[i].split(' ')[1:] for i in range(len(Texto))]
 
 # --------------------------------
 # Contruyendo el diccionario
