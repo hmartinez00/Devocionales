@@ -27,7 +27,10 @@ with open(file, encoding='utf-8') as f:
         lines.append(line)
 Tit = lines[0]
 Sub = lines[1]
-tex = [i - 1 for i in range(len(lines))]
+tex = [i - 1 for i in range(len(lines))][2:]
+texto = lines[2:]
+
+print(tex)
 
 # --------------------------------
 # Contruyendo el contenido
@@ -47,7 +50,7 @@ elif keys_type != None:
 # --------------------------------
 # Contruyendo el diccionario
 # --------------------------------
-sub_param = dict(zip(tex, lines))
+sub_param = dict(zip(tex, texto))
 
 param = {}
 param["Tit"] = Tit
