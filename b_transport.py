@@ -40,7 +40,13 @@ if keys_type == 's' or keys_type == 'S':
     Texto = Texto_0
 elif keys_type == 'n' or keys_type == 'N':
     tex = [Texto_0[i].split(' ')[0] for i in range(len(Texto_0))]
-    Texto = [Texto_0[i].split(' ')[1:] for i in range(len(Texto_0))]
+    for i in range(len(Texto_0)):
+        new_string = ''
+        for i in i.split(' ')[1:]:
+            new_string = new_string + ' '
+            
+
+        # Texto = Texto_0[i].split(' ')[1:]
 
 # --------------------------------
 # Contruyendo el diccionario
