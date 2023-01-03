@@ -27,15 +27,8 @@ with open(file, encoding='utf-8') as f:
         lines.append(line)
 Tit = lines[0]
 Sub = lines[1]
-<<<<<<< HEAD:transporte2.py
-tex = [i - 1 for i in range(len(lines))][2:]
-texto = lines[2:]
-
-print(tex)
-=======
 Texto_0 = lines[2:]
 
->>>>>>> 06274f5452c1d2faace0bf1858d0d5651a922a52:b_transport.py
 
 # --------------------------------
 # Contruyendo el contenido
@@ -45,24 +38,24 @@ keys_type = input('Desea generar claves automaticas? (S/N): ')
 if keys_type == 's' or keys_type == 'S':
     tex = [i + 1 for i in range(len(Texto_0))]
     Texto = Texto_0
-elif keys_type == 'n' or keys_type == 'N':
-    tex = [Texto_0[i].split(' ')[0] for i in range(len(Texto_0))]
-    for i in range(len(Texto_0)):
-        new_string = ''
-        for i in i.split(' ')[1:]:
-            new_string = new_string + ' '
-            
 
-        # Texto = Texto_0[i].split(' ')[1:]
+elif keys_type == 'n' or keys_type == 'N':
+    tex = []
+    for i in range(len(Texto_0)):
+        tex.append(Texto_0[i].split(' ')[0])
+    Texto = []
+    for i in Texto_0:
+        new_string = ''
+        for j in i.split(' ')[1:]:
+            new_string = new_string + j + ' '
+        Texto.append(new_string)
+
+# print(Tit, Sub, tex, Texto)
 
 # --------------------------------
 # Contruyendo el diccionario
 # --------------------------------
-<<<<<<< HEAD:transporte2.py
-sub_param = dict(zip(tex, texto))
-=======
 sub_param = dict(zip(tex, Texto))
->>>>>>> 06274f5452c1d2faace0bf1858d0d5651a922a52:b_transport.py
 
 param = {}
 param["Tit"] = Tit
