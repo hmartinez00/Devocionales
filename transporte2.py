@@ -27,7 +27,7 @@ with open(file, encoding='utf-8') as f:
         lines.append(line)
 Tit = lines[0]
 Sub = lines[1]
-tex = [i - 1 for i in range(len(lines))]
+Texto = [lines[i] for i in range(len(lines)) if i > 1]
 
 # --------------------------------
 # Contruyendo el contenido
@@ -35,19 +35,15 @@ tex = [i - 1 for i in range(len(lines))]
 keys_type = input('Desea generar claves automaticas? (S/N): ')
 
 if keys_type == 's' or keys_type == 'S':
-    keys_type = 0
+    tex = [i + 1 for i in range(len(Texto))]
 elif keys_type == 'n' or keys_type == 'N':
-    keys_type = None
-
-if keys_type == None:
-    pass
-elif keys_type != None:
-    pass
+    tex = [Texto[i].split(' ')[0] for i in range(len(Texto))]
+    Texto = [Texto[i].split(' ')[1] for i in range(len(Texto))]
 
 # --------------------------------
 # Contruyendo el diccionario
 # --------------------------------
-sub_param = dict(zip(tex, lines))
+sub_param = dict(zip(tex, Texto))
 
 param = {}
 param["Tit"] = Tit
@@ -69,3 +65,11 @@ with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
 # Importar a la Base de Datos
 # --------------------------------
 importar(database, ruta_archivo_json, Fecha)
+
+# --------------------------------
+# Vaciar registro de Blackboard
+# --------------------------------
+string = ''
+with open(file, 'w', encoding='utf-8') as f:
+    f.write(string)
+f.close()

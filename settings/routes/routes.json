@@ -16,13 +16,15 @@
         [
             "Crear tabla",
             "Activar ingreso por voz",
-            "Actualizar base de datos",
+            "Ingresar registro manualmente",
+            "Volcar Blackboard a DB",
             "Generar mensajes"
         ],
         [
             "crear_tabla.py",
             "voice.py",
             "transporte.py",
+            "transporte2.py",
             "msgo_creator.py"
         ]
     ]
