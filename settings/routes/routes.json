@@ -24,7 +24,7 @@
             "crear_tabla.py",
             "voice.py",
             "transporte.py",
-            "transporte2.py",
+            "b_transport.py",
             "msgo_creator.py"
         ]
     ]
