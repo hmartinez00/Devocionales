@@ -15,6 +15,7 @@
     "exec": [
         [
             "Crear tabla",
+            "Abrir Webs",
             "Activar ingreso por voz",
             "Ingresar registro manualmente",
             "Volcar Blackboard a DB",
@@ -22,6 +23,7 @@
         ],
         [
             "crear_tabla.py",
+            "web_assinstance.py",
             "voice.py",
             "transporte.py",
             "b_transport.py",
