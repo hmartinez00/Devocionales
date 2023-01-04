@@ -17,17 +17,17 @@
             "Crear tabla",
             "Abrir Webs",
             "Activar ingreso por voz",
-            "Ingresar registro manualmente",
             "Volcar Blackboard a DB",
-            "Generar mensajes"
+            "Generar mensajes",
+            "Ingresar registro manualmente"
         ],
         [
             "crear_tabla.py",
             "web_assinstance.py",
             "voice.py",
-            "transporte.py",
             "b_transport.py",
-            "msgo_creator.py"
+            "msgo_creator.py",
+            "transporte.py"
         ]
     ]
 }
