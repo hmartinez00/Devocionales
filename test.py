@@ -1,34 +1,13 @@
-import json
+from bs4 import BeautifulSoup
+import requests
+from General_Utilities.prettify import prettify
 
-ruta_archivo_json = 'settings/requirements/requirements.json'
-installed_packages = 'settings/requirements/installed_packages.txt'
-requirements = 'requirements.txt'
+url = 'https://www.biblegateway.com/passage/?search=G%C3%A9nesis%206&version=RVR1960'
 
-with open(ruta_archivo_json) as archivo_json:
-    datos_json = json.load(archivo_json)
-keys = list(datos_json.keys())
+response = requests.get(url)
+bs = BeautifulSoup(response.text, 'html.parser')
+links = bs.find_all('p')
+# for i in links:
+#     print(f'{i}\n\n')
 
-packages = []
-with open(installed_packages, encoding='utf-8') as f:
-    for line in f:
-        packages.append(line)
-
-
-
-
-string = ''
-with open(requirements, 'w', encoding='utf-8') as f:
-    f.write(string)
-f.close()
-
-string = ''
-for i in keys:
-    for j in packages:
-        if i.replace('_', '-') in j:
-            string = string + j
-
-with open(requirements, 'w', encoding='utf-8') as f:
-    f.write(string)
-f.close()
-
-print(string)
+print(prettify(links[0]))
