@@ -1,0 +1,37 @@
+{
+    "librerias": [
+        "json",
+        "requests",
+        "webbrowser"
+    ],
+    "ManageDB.sqlite_on_db": [
+        "*"
+    ],
+    "General_Utilities.fecha": [
+        "format_FechaID"
+    ],
+    "General_Utilities.option_list": [
+        "option_list"
+    ],
+    "General_Utilities.control_rutas": [
+        "setting_routes"
+    ],
+    "modules.insertar_module": [
+        "importar"
+    ],
+    "General_Utilities.menu": [
+        "menu"
+    ],
+    "MessagesKit.str_msg_format": [
+        "bm"
+    ],
+    "Eliezer.voice": [
+        "recognizer"
+    ],
+    "bs4": [
+        "BeautifulSoup"
+    ],
+    "datetime": [
+        "timedelta"
+    ]
+}
