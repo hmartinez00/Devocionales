@@ -1,37 +1,25 @@
 {
-    "librerias": [
+    "Librerias": [
         "json",
         "requests",
         "webbrowser"
     ],
-    "ManageDB.sqlite_on_db": [
-        "*"
+    "ManageDB": [
+        "sqlite_on_db"
     ],
-    "General_Utilities.fecha": [
-        "format_FechaID"
-    ],
-    "General_Utilities.option_list": [
-        "option_list"
-    ],
-    "General_Utilities.control_rutas": [
-        "setting_routes"
-    ],
-    "modules.insertar_module": [
-        "importar"
-    ],
-    "General_Utilities.menu": [
+    "General_Utilities": [
+        "fecha",
+        "option_list",
+        "control_rutas",
         "menu"
     ],
-    "MessagesKit.str_msg_format": [
-        "bm"
+    "modules": [
+        "insertar_module"
     ],
-    "Eliezer.voice": [
-        "recognizer"
+    "MessagesKit": [
+        "str_msg_format"
     ],
-    "bs4": [
-        "BeautifulSoup"
-    ],
-    "datetime": [
-        "timedelta"
+    "Eliezer": [
+        "voice"
     ]
 }

@@ -19,11 +19,7 @@
             "Activar ingreso por voz",
             "Volcar Blackboard a DB",
             "Generar mensajes",
-<<<<<<< HEAD
-            "Ingresar registro manualmente"
-=======
             "Actualizar lista de modulos"
->>>>>>> 7e33baef87ba1bffc715909d2f385a44781e7691
         ],
         [
             "crear_tabla.py",
@@ -31,11 +27,7 @@
             "voice.py",
             "b_transport.py",
             "msgo_creator.py",
-<<<<<<< HEAD
-            "transporte.py"
-=======
             "Project_requirements.py"
->>>>>>> 7e33baef87ba1bffc715909d2f385a44781e7691
         ]
     ]
 }
