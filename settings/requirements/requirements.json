@@ -1,7 +1,6 @@
 {
     "Librerias": [
         "json",
-        "subprocess",
         "requests",
         "webbrowser"
     ],

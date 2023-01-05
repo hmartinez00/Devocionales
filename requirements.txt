@@ -1,4 +1,5 @@
 ManageDB==0.2
 General-Utilities==0.1
+pyasn1-modules==0.2.8
 MessagesKit==0.2
 Eliezer==0.1
