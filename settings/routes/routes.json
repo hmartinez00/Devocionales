@@ -19,7 +19,7 @@
             "Activar ingreso por voz",
             "Volcar Blackboard a DB",
             "Generar mensajes",
-            "Actualizar lista de modulos"
+            "Actualizar registro de dependencias"
         ],
         [
             "crear_tabla.py",
