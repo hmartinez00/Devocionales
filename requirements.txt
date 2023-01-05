@@ -1,0 +1,4 @@
+ManageDB==0.2
+General-Utilities==0.1
+MessagesKit==0.2
+Eliezer==0.1
