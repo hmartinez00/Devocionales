@@ -219,6 +219,7 @@
             "8": "Si somos salvos, y la salvaci\u00f3n seguramente no se pierde si se ha recibido, porqu\u00e9 Jes\u00fas nos manda a pedir qu\u00e9 seamos tenidos por dignos de escapar de las cosas que vendr\u00e1n sobre la tierra, y de estar en pie delante del Hijo del Hombre?"
         }
     },
+<<<<<<< HEAD
     "2023-01-09": {
         "Tit": "Quiero morir (1) \u2013 Mois\u00e9s\n",
         "Sub": "Dijo Mois\u00e9s al Se\u00f1or\u2026 has puesto la carga de todo este pueblo sobre m\u00ed\u2026 te ruego que me des muerte\u2026 y que yo no vea mi mal. (N\u00fameros 11:11, 15)\n",
@@ -244,6 +245,15 @@
         "Sub": "Jes\u00fas le dijo: Yo soy el camino, y la verdad, y la vida; nadie viene al Padre, sino por m\u00ed. (Juan 14:6)\n",
         "Tex": {
             "1": "Escriba una sisntesis del contenido de este devocional."
+=======
+    "2023-01-07": {
+        "Tit": "Estuvo muerto, pero ahora vive\n",
+        "Sub": "(Jesucristo dijo:) Estuve muerto; mas he aqu\u00ed que vivo por los siglos de los siglos. (Apocalipsis 1:18)\n",
+        "Tex": {
+            "1": "De qui\u00e9n es Se\u00f1or  el Se\u00f1or Jes\u00fas seg\u00fan Romanos 8:34; 14:9?\n",
+            "2": "Qu\u00e9 es nuestra fe si cristo no resucit\u00f3?\n",
+            "3": "Todo el edificio de nuestra fe se basa en la resurrecci\u00f3n de Jes\u00fas. Si existiese alguna evidencia de que \u00e9ste evento pudiera haber sido falso, en un mundo que odia a Dios habria sido un escandalo absoluto. El hombre carnal odia a Dios, odia sus mandamientos, pero incluso algunos de los ateos m\u00e1s acerrimos de la historia se han vistos forzados a reconocer, que la resurrecci\u00f3n es un hecho que no puede ser desmentido, sino que por el contrario, cada vez ha sido m\u00e1s reforzado por las evidencias hist\u00f3ricas."
+>>>>>>> ef8243d6b1b1ad615b5fd38d6e14f01e5c294490
         }
     }
 }
