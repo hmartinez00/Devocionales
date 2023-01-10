@@ -8,7 +8,7 @@ from General_Utilities.fecha import BatchID
 fecha = input('Introduzca la fecha: ')
 fecha = datetime.strptime(fecha, '%Y%m%d')
 delay_fecha = BatchID(
-    fecha - timedelta(days=99)
+    fecha - timedelta(days=100)
 )
 print(delay_fecha)
 
