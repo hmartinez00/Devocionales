@@ -3,7 +3,7 @@ from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
 from General_Utilities.fecha import format_FechaID
 from modules.insertar_module import importar
-
+from modules.msgo_creator_module import msgo_sender
 
 # --------------------------------
 # Seteando datos de iniciales
@@ -50,8 +50,6 @@ elif keys_type == 'n' or keys_type == 'N':
             new_string = new_string + j + ' '
         Texto.append(new_string)
 
-# print(Tit, Sub, tex, Texto)
-
 # --------------------------------
 # Contruyendo el diccionario
 # --------------------------------
@@ -77,6 +75,7 @@ with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
 # Importar a la Base de Datos
 # --------------------------------
 importar(database, ruta_archivo_json, Fecha)
+msgo_sender(database, ruta_archivo_json, Fecha)
 
 # --------------------------------
 # Vaciar registro de Blackboard
