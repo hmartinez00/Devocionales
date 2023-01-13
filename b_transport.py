@@ -1,6 +1,5 @@
 import json
 from ManageDB.sqlite_on_db import selectall
-from datetime import timedelta
 from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
 from General_Utilities.fecha import format_FechaID, DeltaT
