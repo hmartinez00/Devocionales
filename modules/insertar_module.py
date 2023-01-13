@@ -20,7 +20,7 @@ def importar(database, ruta_archivo_json, Fecha):
     Tex = datos_json[Fecha]["Tex"]
 
     for i in Tex.keys():
-        texto = i + ' ' + Tex[i]
+        texto = f'{i}. {Tex[i]}'
 
         renglon = (
             Fecha,

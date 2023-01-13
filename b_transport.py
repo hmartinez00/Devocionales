@@ -1,7 +1,9 @@
 import json
+from ManageDB.sqlite_on_db import selectall
+from datetime import timedelta
 from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
-from General_Utilities.fecha import format_FechaID
+from General_Utilities.fecha import format_FechaID, DeltaT
 from modules.insertar_module import importar
 from modules.msgo_creator_module import msgo_sender
 
@@ -13,8 +15,18 @@ database = r"2tim4_1.db"
 key = 'tables'
 tables = setting_routes(key)
 ruta_archivo_json = option_list(tables)
-Fecha = input('Introduzca la fecha: ')
-Fecha = format_FechaID(Fecha)
+
+pregunta = input('Calcular proxima fecha? (S/N): ')
+
+if pregunta == 's' or pregunta == 'S':
+    table = ruta_archivo_json.split('/')[-1].split('.json')[0]
+    Fecha = selectall(database, table)['Fecha'].iloc[-1]
+    Fecha = DeltaT(Fecha, -1)
+else:
+    Fecha = input('Introduzca la fecha: ')
+    Fecha = format_FechaID(Fecha)
+
+print(Fecha)
 
 # --------------------------------
 # Leyendo el archivo
@@ -24,7 +36,7 @@ file = r'settings\blackboard\blackboard.txt'
 lines = []
 with open(file, encoding='utf-8') as f:
     for line in f:
-        lines.append(line)
+        lines.append(line.split('\n')[0])
 Tit = lines[0]
 Sub = lines[1]
 Texto_0 = lines[2:]
