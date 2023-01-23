@@ -19,6 +19,7 @@
             "Activar ingreso por voz",
             "Volcar Blackboard a DB",
             "Generar mensajes",
+            "Acualizar tabla manualmente",
             "Actualizar registro de dependencias"
         ],
         [
@@ -27,6 +28,7 @@
             "voice.py",
             "b_transport.py",
             "msgo_creator.py",
+            "transporte.py",
             "Project_requirements.py"
         ]
     ]
