@@ -407,13 +407,13 @@
             "3": "Elabore una s\u00edntesis de \u00e9ste devocional."
         }
     },
-<<<<<<< HEAD
     "2023-01-28": {
         "Tit": "\u00bfA d\u00f3nde va el mundo?",
         "Sub": "Jesucristo, el cual se dio a s\u00ed mismo por nuestros pecados para librarnos del presente siglo malo, conforme a la voluntad de nuestro Dios y Padre. (G\u00e1latas 1:3-4)",
         "Tex": {
             "1": "Elabore una s\u00edntesis de \u00e9ste devocional."
-=======
+        }
+    },
     "2023-01-29": {
         "Tit": "Cada d\u00eda, a cada hora",
         "Sub": "Dios, Dios m\u00edo eres t\u00fa; de madrugada te buscar\u00e9; mi alma tiene sed de ti, mi carne te anhela, en tierra seca y \u00e1rida donde no hay aguas. (Salmo 63:1)",
@@ -421,7 +421,29 @@
             "1": "El Se\u00f1or estuvo a mi lado, y me dio fuerzas. (2 Timoteo 4:17)",
             "2": "Cercano est\u00e1 el Se\u00f1or a los quebrantados de coraz\u00f3n; y salva a los contritos de esp\u00edritu. (Salmo 34:18)",
             "3": "Elabore una s\u00edntesis de \u00e9ste devocional."
->>>>>>> de31fffb657042c438986523f6979256e1bdd80f
+        }
+    },
+    "2023-02-01": {
+        "Tit": "El evangelio en internet",
+        "Sub": "Crec\u00eda la palabra del Se\u00f1or, y el n\u00famero de los disc\u00edpulos se multiplicaba grandemente. (Hechos 6:7)",
+        "Tex": {
+            "1": "As\u00ed que la fe es por el o\u00edr, y el o\u00edr, por la palabra de Dios. (Romanos 10:17)",
+            "2": "Elabore una s\u00edntesis de \u00e9ste devocional."
+        }
+    },
+    "2023-02-02": {
+        "Tit": "El cristianismo, una relaci\u00f3n con Jes\u00fas",
+        "Sub": "Jes\u00fas dijo a sus disc\u00edpulos: Si alguno quiere venir en pos de m\u00ed, ni\u00e9guese a s\u00ed mismo, y tome su cruz, y s\u00edgame. (Mateo 16:24)",
+        "Tex": {
+            "1": "No son del mundo, como tampoco yo soy del mundo. (Juan 17:16)",
+            "2": "Elabore una s\u00edntesis de \u00e9ste devocional."
+        }
+    },
+    "2023-02-03": {
+        "Tit": "Aberraciones de la incredulidad",
+        "Sub": "Cuando Jes\u00fas naci\u00f3 en Bel\u00e9n de Judea en d\u00edas del rey Herodes, vinieron del oriente a Jerusal\u00e9n unos magos, diciendo: \u00bfD\u00f3nde est\u00e1 el rey de los jud\u00edos, que ha nacido?\u2026 Oyendo esto, el rey Herodes se turb\u00f3, y toda Jerusal\u00e9n con \u00e9l. (Mateo 2:1-3)",
+        "Tex": {
+            "1": "Elabore una s\u00edntesis de \u00e9ste devocional."
         }
     }
 }
