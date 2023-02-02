@@ -418,6 +418,7 @@
         "Tit": "Quiero morir (4) \u2013 Jon\u00e1s",
         "Sub": "Vio Dios\u2026 que se convirtieron de su mal camino; y se arrepinti\u00f3 del mal que hab\u00eda dicho que les har\u00eda, y no lo hizo. Pero Jon\u00e1s se apesadumbr\u00f3 en extremo, y se enoj\u00f3. Y or\u00f3 al Se\u00f1or\u2026 te ruego que me quites la vida; porque mejor me es la muerte que la vida. (Jon\u00e1s 3:10; 4:1-3)",
         "Tex": {
+<<<<<<< HEAD
             "1": "Leer Jon\u00e1s 4",
             "2": "Elabore una s\u00edntesis de \u00e9ste devocional."
         }
@@ -425,6 +426,32 @@
     "2023-01-31": {
         "Tit": "\u00bfPodemos esperar d\u00edas mejores?",
         "Sub": "Bendito el Dios y Padre de nuestro Se\u00f1or Jesucristo, que seg\u00fan su grande misericordia nos hizo renacer para una esperanza viva, por la resurrecci\u00f3n de Jesucristo de los muertos. (1 Pedro 1:3)",
+=======
+            "1": "El Se\u00f1or estuvo a mi lado, y me dio fuerzas. (2 Timoteo 4:17)",
+            "2": "Cercano est\u00e1 el Se\u00f1or a los quebrantados de coraz\u00f3n; y salva a los contritos de esp\u00edritu. (Salmo 34:18)",
+            "3": "Elabore una s\u00edntesis de \u00e9ste devocional."
+        }
+    },
+    "2023-02-01": {
+        "Tit": "El evangelio en internet",
+        "Sub": "Crec\u00eda la palabra del Se\u00f1or, y el n\u00famero de los disc\u00edpulos se multiplicaba grandemente. (Hechos 6:7)",
+        "Tex": {
+            "1": "As\u00ed que la fe es por el o\u00edr, y el o\u00edr, por la palabra de Dios. (Romanos 10:17)",
+            "2": "Elabore una s\u00edntesis de \u00e9ste devocional."
+        }
+    },
+    "2023-02-02": {
+        "Tit": "El cristianismo, una relaci\u00f3n con Jes\u00fas",
+        "Sub": "Jes\u00fas dijo a sus disc\u00edpulos: Si alguno quiere venir en pos de m\u00ed, ni\u00e9guese a s\u00ed mismo, y tome su cruz, y s\u00edgame. (Mateo 16:24)",
+        "Tex": {
+            "1": "No son del mundo, como tampoco yo soy del mundo. (Juan 17:16)",
+            "2": "Elabore una s\u00edntesis de \u00e9ste devocional."
+        }
+    },
+    "2023-02-03": {
+        "Tit": "Aberraciones de la incredulidad",
+        "Sub": "Cuando Jes\u00fas naci\u00f3 en Bel\u00e9n de Judea en d\u00edas del rey Herodes, vinieron del oriente a Jerusal\u00e9n unos magos, diciendo: \u00bfD\u00f3nde est\u00e1 el rey de los jud\u00edos, que ha nacido?\u2026 Oyendo esto, el rey Herodes se turb\u00f3, y toda Jerusal\u00e9n con \u00e9l. (Mateo 2:1-3)",
+>>>>>>> dcc99565be9d1e6a90915ee7e08f57a767773284
         "Tex": {
             "1": "Elabore una s\u00edntesis de \u00e9ste devocional."
         }

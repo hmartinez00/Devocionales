@@ -407,6 +407,7 @@
         "Tit": "Proverbios 25:27-28",
         "Sub": "27 Comer mucha miel no es bueno, Ni el buscar la propia gloria es gloria. 28 Como ciudad derribada y sin muro Es el hombre cuyo esp\u00edritu no tiene rienda.",
         "Tex": {
+<<<<<<< HEAD
             "1": "Elabore una interpretaci\u00f3n de \u00e9ste texto."
         }
     },
@@ -422,6 +423,31 @@
         "Sub": "1 Como no conviene la nieve en el verano, ni la lluvia en la siega, As\u00ed no conviene al necio la honra. 2 Como el gorri\u00f3n en su vagar, y como la golondrina en su vuelo, As\u00ed la maldici\u00f3n nunca vendr\u00e1 sin causa.",
         "Tex": {
             "1": "Elabore una interpretaci\u00f3n de \u00e9ste texto."
+=======
+            "1": "Haga una interpretaci\u00f3n de \u00e9ste texto."
+        }
+    },
+    "2023-02-01": {
+        "Tit": "Proverbios 26:3-4",
+        "Sub": "3 El l\u00e1tigo para el caballo, el cabestro para el asno, Y la vara para la espalda del necio. 4 Nunca respondas al necio de acuerdo con su necedad,Para que no seas t\u00fa tambi\u00e9n como \u00e9l.",
+        "Tex": {
+            "1": "Elabore una interpretaci\u00f3n de \u00e9ste texto a la luz de Salmo 32:8-9."
+        }
+    },
+    "2023-02-02": {
+        "Tit": "Proverbios 26:5-6",
+        "Sub": "5 Responde al necio como merece su necedad, Para que no se estime sabio en su propia opini\u00f3n. 6 Como el que se corta los pies y bebe su da\u00f1o, As\u00ed es el que env\u00eda recado por mano de un necio.",
+        "Tex": {
+            "1": "Haga una interpretaci\u00f3n de \u00e9ste texto.",
+            "2": "Hasta el momento, Hasta \u00e9ste cap\u00edtulo, cuantas veces el libro de proverbios ha hablado en contra de la necedad? Enumere los pasajes."
+        }
+    },
+    "2023-02-03": {
+        "Tit": "Proverbios 26:7-8",
+        "Sub": "7 Las piernas del cojo penden in\u00fatiles; As\u00ed es el proverbio en la boca del necio. 8 Como quien liga la piedra en la honda, As\u00ed hace el que da honra al necio.",
+        "Tex": {
+            "1": "Haga una interpretaci\u00f3n de \u00e9ste texto."
+>>>>>>> dcc99565be9d1e6a90915ee7e08f57a767773284
         }
     }
 }
