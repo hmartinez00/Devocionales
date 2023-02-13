@@ -4,7 +4,9 @@ from General_Utilities.control_rutas import setting_routes
 from General_Utilities.option_list import option_list
 from General_Utilities.fecha import format_FechaID, DeltaT
 from modules.insertar_module import importar
-from modules.msgo_creator_module import msgo_sender
+        database: str, 
+        ruta_archivo_json: str, 
+        Fecha: str
 
 # --------------------------------
 # Seteando datos de iniciales

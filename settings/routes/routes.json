@@ -29,7 +29,7 @@
         [
             "crear_tabla.py",
             "web_assinstance.py",
-            "web_assistance/generador_automatico.py",
+            "generador_automatico.py",
             "voice.py",
             "b_transport.py",
             "msgo_creator.py",
