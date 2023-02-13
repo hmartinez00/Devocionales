@@ -12,10 +12,14 @@
     "voice": [
         "settings/voice/voice_comand_settings.json"
     ],
+    "blackboard": [
+        "settings/blackboard/blackboard.txt"
+    ],
     "exec": [
         [
             "Crear tabla",
             "Abrir Webs",
+            "Generar Automaticamente",
             "Activar ingreso por voz",
             "Volcar Blackboard a DB",
             "Generar mensajes",
@@ -25,6 +29,7 @@
         [
             "crear_tabla.py",
             "web_assinstance.py",
+            "web_assistance/generador_automatico.py",
             "voice.py",
             "b_transport.py",
             "msgo_creator.py",
