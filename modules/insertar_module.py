@@ -1,6 +1,9 @@
 import json
 from ManageDB.sqlite_on_db import *
 from modules.msgo_creator_module import msgo_sender
+from General_Utilities.fecha import format_FechaID, DeltaT
+from General_Utilities.control_rutas import setting_routes
+from General_Utilities.option_list import option_list
 
 
 def importar(database, ruta_archivo_json, Fecha):
@@ -28,7 +31,6 @@ def importar(database, ruta_archivo_json, Fecha):
         )
 
         insert(database, table, renglon)
-
 
 def x_transport(
         keys_type: bool,
@@ -114,3 +116,64 @@ def x_transport(
     with open(file, 'w', encoding='utf-8') as f:
         f.write(string)
     f.close()
+
+def last_date(
+        keys_type: bool,
+        database: str, 
+        ruta_archivo_json: str, 
+    ):
+
+    '''
+    Funcion para extraccion de ultima fecha.
+
+    *parameters:
+        keys_type: bool. Cuando esta en True, selecciona automaticamente la ultima fecha de la tabla. Si es False, pregunta.
+        database: str. Nombre de la base de datos a la que se desea conectar.
+        ruta_archivo_json: str. Nombre del json que sirve para transportar los datos a la tabla.
+        table: str. Nobre de la tabla a consultar.
+
+    '''
+
+    if keys_type == True:
+        table = ruta_archivo_json.split('/')[-1].split('.json')[0]
+        Fecha = selectall(database, table)['Fecha'].iloc[-1]
+        Fecha = DeltaT(Fecha, -1)
+
+    elif keys_type == False:
+        pregunta = input('Calcular proxima fecha? (S/N): ')
+
+        if pregunta == 's' or pregunta == 'S':
+            table = ruta_archivo_json.split('/')[-1].split('.json')[0]
+            Fecha = selectall(database, table)['Fecha'].iloc[-1]
+            Fecha = DeltaT(Fecha, -1)
+        else:
+            Fecha = input('Introduzca la fecha: ')
+            Fecha = format_FechaID(Fecha)
+    
+    return Fecha
+
+def sel_tab(
+        keys_type: bool, 
+        ind: int
+    ):
+
+    '''
+    Funcion para seleccion automatica de tablas
+
+    *parameters:
+        keys_type: str. Cuando esta en True, selecciona automaticamente la tabla segun el parametro "ind". Si es False, pregunta.
+        ind: int. Numero de la tabla en la lista tablas.
+    
+    '''
+
+    key = 'tables'
+    
+    if keys_type == True:
+        tables = setting_routes(key)[ind]
+        ruta_archivo_json = tables
+    
+    elif keys_type == False:
+        tables = setting_routes(key)
+        ruta_archivo_json = option_list(tables)
+
+    return ruta_archivo_json
