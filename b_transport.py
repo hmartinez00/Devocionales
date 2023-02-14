@@ -41,6 +41,7 @@ print(Fecha)
 # Transporte y envio
 # --------------------------------
 
+keys_type = False
 x_transport(
         keys_type,
         database, 

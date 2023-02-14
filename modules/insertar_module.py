@@ -72,15 +72,27 @@ def x_transport(
         Texto = Texto_0
 
     elif keys_type == False:
-        tex = []
-        for i in range(len(Texto_0)):
-            tex.append(Texto_0[i].split(' ')[0])
-        Texto = []
-        for i in Texto_0:
-            new_string = ''
-            for j in i.split(' ')[1:]:
-                new_string = new_string + j + ' '
-            Texto.append(new_string)
+        # --------------------------------
+        # Contruyendo el contenido
+        # --------------------------------
+        keys_type = input('Desea generar claves automaticas? (S/N): ')
+
+        if keys_type == 's' or keys_type == 'S':
+            tex = [i + 1 for i in range(len(Texto_0))]
+            Texto = Texto_0
+
+        elif keys_type == 'n' or keys_type == 'N':
+            tex = []
+            for i in range(len(Texto_0)):
+                tex.append(Texto_0[i].split(' ')[0])
+            Texto = []
+            for i in Texto_0:
+                new_string = ''
+                for j in i.split(' ')[1:]:
+                    new_string = new_string + j + ' '
+                Texto.append(new_string)
+
+        # --------------------------------
     
     # --------------------------------
     # Contruyendo el diccionario
