@@ -17,9 +17,8 @@
     ],
     "exec": [
         [
-            "Crear tabla",
-            "Abrir Webs",
-            "Generar Automaticamente",
+            "Opciones de tabla",
+            "Opciones web",
             "Activar ingreso por voz",
             "Volcar Blackboard a DB",
             "Generar mensajes",
@@ -27,8 +26,7 @@
             "Actualizar registro de dependencias"
         ],
         [
-            "crear_tabla.py",
-            "web_assinstance.py",
+            "table_format.py",
             "generador_automatico.py",
             "voice.py",
             "b_transport.py",
@@ -39,15 +37,26 @@
     ],
     "sub_exec": {
         "web_assistance":
-            {
-                "opciones": [
-                    "La buena semilla",
-                    "Proverbios"
-                ],
-                "acciones": [
-                    "web_assistance/labuenasemilla.py",
-                    "web_assistance/proverbios.py"
-                ]
-            }
+        {
+            "opciones": [
+                "La buena semilla",
+                "Proverbios",
+                "Abrir Webs"
+            ],
+            "acciones": [
+                "web_assistance/labuenasemilla.py",
+                "web_assistance/proverbios.py",
+                "web_assistance/web_assinstance.py"
+            ]
+        },
+        "table_creator":
+        {
+            "opciones": [
+                "Crear tabla"
+            ],
+            "acciones": [
+                "table_creator/crear_tabla.py"
+            ]
+        }
     }
 }
