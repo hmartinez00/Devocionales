@@ -49,63 +49,64 @@ bs          = BeautifulSoup(response.text, 'html.parser')
 
 lecture     = bs.find_all(class_='lecture')
 Proverbio   = str(lecture).split('>')[2].split('<')[0].split('Proverbios ')[1]
-cap         = int(Proverbio.split(':')[0])
+cap         = Proverbio.split(':')[0]
 vers        = Proverbio.split(':')[1]
-
-print(type(cap), type(vers))
 
 # -------------------------------------
 # Extraemos los datos de la pag de biblegateway
 # -------------------------------------
-inicio = int(vers.split('-')[0])
-fin = int(vers.split('-')[1])
-etiquetas = [f'text Prov-{cap}-{inicio + i}' for i in range(fin - inicio + 1)]
+inicio  = int(vers.split('-')[0])
+fin     = int(vers.split('-')[1])
+# etiquetas = [f'text Prov-{cap}-{inicio + i}' for i in range(fin - inicio + 1)]
+etiquetas = []
+for i in range(fin - inicio + 1):
+    etiquetas.append(f'text Prov-{cap}-{inicio + i}')
 
 print(etiquetas)
 
-# bible = 'https://www.biblegateway.com/passage/?search=proverbios+' + \
-#     cap + '%3A' + vers + '&version=RVR1960'
+bible = 'https://www.biblegateway.com/passage/?search=proverbios+' + \
+    cap + '%3A' + vers + '&version=RVR1960'
 
-# response    = requests.get(bible                        )
-# bs          = BeautifulSoup(response.text, 'html.parser')
+response    = requests.get(bible                        )
+bs          = BeautifulSoup(response.text, 'html.parser')
 
-# # vers     = bs.find_all(class_='versenum')
-# sub_string = ''
-# for i in etiquetas:
-#     text = bs.find_all(class_=i)
-#     for j in text:
-#         if 'versenum' in str(j):
-#             num = str(j).split('>')[2].split('<')[0]
-#             cadena = str(j).split('>')[3].split('<')[0]
-#             if sub_string == '':
-#                 sub_string = num + ' ' + cadena
-#             else:
-#                 sub_string = sub_string + ' ' + num + ' ' + cadena
-#         else:
-#             cadena = str(j).split('>')[1].split('<')[0]
-#             sub_string = sub_string + ' ' + cadena
+# vers     = bs.find_all(class_='versenum')
+sub_string = ''
+for i in etiquetas:
+    text = bs.find_all(class_=i)
+    for j in text:
+        if 'versenum' in str(j):
+            num = str(j).split('>')[2].split('<')[0]
+            cadena = str(j).split('>')[3].split('<')[0]
+            if sub_string == '':
+                sub_string = num + ' ' + cadena
+            else:
+                sub_string = sub_string + ' ' + num + ' ' + cadena
+        else:
+            cadena = str(j).split('>')[1].split('<')[0]
+            sub_string = sub_string + ' ' + cadena
 
-# # -------------------------------------
-# # Contruir el mensaje
-# # -------------------------------------
-# string = f'''Proverbios {cap}:{vers}
-# {sub_string}
-# Elabore una interpretacion de este texto.'''
+# -------------------------------------
+# Contruir el mensaje
+# -------------------------------------
+string = f'''Proverbios {cap}:{vers}
+{sub_string}
+Elabore una interpretacion de este texto.'''
 
-# # -------------------------------------
-# # Actualizar Blackboard
-# # -------------------------------------
-# with open(file, 'w', encoding='utf-8') as f:
-#     f.write(string)
-# f.close()
+# -------------------------------------
+# Actualizar Blackboard
+# -------------------------------------
+with open(file, 'w', encoding='utf-8') as f:
+    f.write(string)
+f.close()
 
-# # -------------------------------------
-# # Enviamos a la Base de Datos
-# # -------------------------------------
-# x_transport(
-#         keys_type,
-#         database, 
-#         ruta_archivo_json, 
-#         Fecha
-#     )
-# # -------------------------------------
+# -------------------------------------
+# Enviamos a la Base de Datos
+# -------------------------------------
+x_transport(
+        keys_type,
+        database, 
+        ruta_archivo_json, 
+        Fecha
+    )
+# -------------------------------------

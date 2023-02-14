@@ -36,5 +36,18 @@
             "transporte.py",
             "Project_requirements.py"
         ]
-    ]
+    ],
+    "sub_exec": {
+        "web_assistance":
+            {
+                "opciones": [
+                    "La buena semilla",
+                    "Proverbios"
+                ],
+                "acciones": [
+                    "web_assistance/labuenasemilla.py",
+                    "web_assistance/proverbios.py"
+                ]
+            }
+    }
 }
