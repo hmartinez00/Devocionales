@@ -52,10 +52,12 @@
         "table_creator":
         {
             "opciones": [
-                "Crear tabla"
+                "Crear tabla",
+                "Insertar tabla"
             ],
             "acciones": [
-                "table_creator/crear_tabla.py"
+                "table_creator/crear_tabla.py",
+                "table_creator/insertar_excel.py"
             ]
         }
     }
