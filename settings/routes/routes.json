@@ -41,12 +41,14 @@
             "opciones": [
                 "La buena semilla",
                 "Proverbios",
-                "Abrir Webs"
+                "Abrir Webs",
+                "Extraer datos de pasaje"
             ],
             "acciones": [
                 "web_assistance/labuenasemilla.py",
                 "web_assistance/proverbios.py",
-                "web_assistance/web_assinstance.py"
+                "web_assistance/web_assinstance.py",
+                "web_assistance/web_search.py"
             ]
         },
         "table_creator":

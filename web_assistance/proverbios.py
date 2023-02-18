@@ -57,7 +57,7 @@ vers        = Proverbio.split(':')[1]
 # -------------------------------------
 inicio  = int(vers.split('-')[0])
 fin     = int(vers.split('-')[1])
-# etiquetas = [f'text Prov-{cap}-{inicio + i}' for i in range(fin - inicio + 1)]
+
 etiquetas = []
 for i in range(fin - inicio + 1):
     etiquetas.append(f'text Prov-{cap}-{inicio + i}')
