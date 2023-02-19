@@ -4,6 +4,22 @@ import webbrowser
 from General_Utilities.control_rutas import setting_routes
 
 
+def ocurrencias(__cadena__, __sub_cadena__):
+    '''
+    Arroja una lista de los valores de las etiquetas con atributos coincidentes con la subcadena.
+    '''
+    __vers__ = []
+    while True:
+        ocr = str(__cadena__).find(__sub_cadena__)
+        if ocr != -1:
+            __cadena__ = str(__cadena__)[ocr + len(__sub_cadena__):]
+            __vers__.append(__cadena__.split('"')[0])
+        elif ocr == -1:
+            break
+    
+    return __vers__
+
+
 key         = 'blackboard'
 file        = setting_routes(key)[0]
 
@@ -34,16 +50,22 @@ bible = f'https://www.biblegateway.com/passage/?search={libro}+' + \
 response    = requests.get(bible                        )
 bs          = BeautifulSoup(response.text, 'html.parser')
 
-cap     = bs.find_all(class_='chapternum')
-vers    = bs.find_all(class_='versenum')
-tit     = bs.find_all('h3')
-text    = bs.find_all('div', class_='passage-content passage-class-0')
+parrafos    = bs.find_all('p')
 
-print(len(text))
+textos = []
+for i in range(len(parrafos)):
+    if 'text' in str(parrafos[i]):
+        textos.append(parrafos[i])
+        
+        cadena = textos[i]
+        sub_cadena = 'class="text '
+        vers = ocurrencias(cadena, sub_cadena)
 
-# for i in vers:
-#     print(str(i).split('>')[1].split('<')[0])
+    print(vers, cadena)
 
+# titulos = [i for i in bs.find_all('h3') if 'text' in str(i)]
+
+        
 # sub_string = ''
 # for i in etiquetas:
 #     text = bs.find_all(class_=i)
