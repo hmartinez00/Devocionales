@@ -17,7 +17,8 @@
     ],
     "biblequotes":[
         "settings/biblequotes/passages.txt",
-        "settings/biblequotes/crossref.txt"
+        "settings/biblequotes/crossref.txt",
+        "settings/biblequotes/Sketch__.txt"
     ],
     "exec": [
         [
@@ -46,13 +47,15 @@
                 "La buena semilla",
                 "Proverbios",
                 "Abrir Webs",
-                "Extraer datos de pasaje"
+                "Extraer datos de pasaje",
+                "Extraer titulos"
             ],
             "acciones": [
                 "web_assistance/labuenasemilla.py",
                 "web_assistance/proverbios.py",
                 "web_assistance/web_assinstance.py",
-                "web_assistance/web_search.py"
+                "web_assistance/web_search.py",
+                "web_assistance/Scketch__.py"
             ]
         },
         "table_creator":
