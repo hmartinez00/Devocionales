@@ -15,6 +15,10 @@
     "blackboard": [
         "settings/blackboard/blackboard.txt"
     ],
+    "biblequotes":[
+        "settings/biblequotes/passages.txt",
+        "settings/biblequotes/crossref.txt"
+    ],
     "exec": [
         [
             "Opciones de tabla",

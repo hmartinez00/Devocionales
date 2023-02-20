@@ -4,18 +4,20 @@ import webbrowser
 from General_Utilities.control_rutas import setting_routes
 
 
-def versiculos(__cadena__, __sub_cadena__):
+def str_estract(__cadena__, __sub_start__, __sub_end__):
     '''
     Arroja una lista de los valores de las etiquetas con atributos coincidentes con la subcadena.
     '''
     __vers__ = []
     __ref__ = []
     while True:
-        ocr = str(__cadena__).find(__sub_cadena__)
+        ocr = str(__cadena__).find(__sub_start__)
         if ocr != -1:
-            __cadena__ = str(__cadena__)[ocr + len(__sub_cadena__):]
-            __ref__.append(__cadena__.split('"')[0])
-            __num__ = __cadena__.split('-')[2].split('"')[0]
+            __cadena__ = str(__cadena__)[ocr + len(__sub_start__):]
+            __s_ref__ = __cadena__.split(__sub_end__)[0]
+            if __s_ref__ not in __ref__:
+                __ref__.append(__s_ref__)
+            __num__ = __cadena__.split('-')[2].split(__sub_end__)[0]
             __res__ = str(__cadena__).split('>')[3].split('<')[0]
             __string__ = f'{__num__} {__res__}'
             __vers__.append(__string__)
@@ -25,8 +27,9 @@ def versiculos(__cadena__, __sub_cadena__):
     return __vers__, __ref__
 
 
-key         = 'blackboard'
-file        = setting_routes(key)[0]
+key     = 'biblequotes'
+file    = setting_routes(key)[0]
+file1   = setting_routes(key)[1]
 
 pasaje  = input('Introduzca el pasaje: ')
 libro   = pasaje.split(' ')[0].lower()
@@ -43,10 +46,18 @@ for i in string:
 print(libro, capvers)
 
 # -------------------------------------
-# Vaciar Blackboard
+# Vaciar passages
 # -------------------------------------
 string = ''
 with open(file, 'w', encoding='utf-8') as f:
+    f.write(string)
+f.close()
+
+# -------------------------------------
+# Vaciar crossref
+# -------------------------------------
+string = ''
+with open(file1, 'w', encoding='utf-8') as f:
     f.write(string)
 f.close()
 
@@ -67,6 +78,8 @@ titulos = [i for i in bs.find_all('h3') if 'text' in str(i)]
 titulo = ''
 parrafos    = bs.find_all('p')
 
+list_cross_refs = [i for i in bs.find_all('li') if 'crossref-link' in str(i)]
+
 textos = []
 string = ''
 for i in range(len(parrafos)):
@@ -74,18 +87,19 @@ for i in range(len(parrafos)):
         textos.append(parrafos[i])
         
         cadena = textos[i]
-        sub_cadena = 'class="text '
-        # Extraemos bloque de versiculos
-        vers = versiculos(cadena, sub_cadena)[0]
+        sub_start = 'class="text '
+        sub_end = '"'
+        # Extraemos bloque de str_estract
+        vers = str_estract(cadena, sub_start, sub_end)[0]
         # Extraemos bloque de referencias
-        refs = versiculos(cadena, sub_cadena)[1]
+        refs = str_estract(cadena, sub_start, sub_end)[1]
 
     # -------------------------------------
     # Extraemos titulos
     # -------------------------------------
     for k in refs:
         for h in titulos:
-            # Cada k del bloque de versiculos se busca en cada h_titulo
+            # Cada k del bloque de str_estract se busca en cada h_titulo
             etiqueta = str(h).split('class="text ')[1].split('"')[0]
             titulo_0 = str(h).split('>')[2].split('<')[0]
             if k == etiqueta:
@@ -103,7 +117,6 @@ for i in range(len(parrafos)):
         elif sub_string != '':
             sub_string = sub_string + ' ' + j
 
-
     # -------------------------------------
     # Contruir el mensaje
     # -------------------------------------
@@ -113,14 +126,31 @@ for i in range(len(parrafos)):
     elif titulo not in string:
             string = string + '\n' + titulo + '\n\n' + f'{sub_string}\n'
 
+# -------------------------------------
+# Extraemos referencias Cruzadas
+# -------------------------------------
+format_list_cross_ref = ''
+for i in list_cross_refs:
+    flcr = str_estract(i, 'title="Go to ', '"')
+    format_list_cross_ref = format_list_cross_ref + '\n' + flcr[1][0] + ' - ' + str(flcr[0][0]).split('bibleref= ')[1]
 
+print(format_list_cross_ref)
 print(Gran_Titulo)
 
 string = Gran_Titulo.split('Bible Gateway passage: ')[1] + '\n\n' + string
 
 # -------------------------------------
-# Actualizar Blackboard
+# Actualizar passages
 # -------------------------------------
 with open(file, 'w', encoding='utf-8') as f:
     f.write(string)
+f.close()
+
+crossref_string = 'Referencias Cruzadas: \n' + format_list_cross_ref
+
+# -------------------------------------
+# Actualizar crossref
+# -------------------------------------
+with open(file1, 'w', encoding='utf-8') as f:
+    f.write(crossref_string)
 f.close()
