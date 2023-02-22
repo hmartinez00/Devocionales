@@ -35,3 +35,13 @@ def str_title(__cadena__):
     res = [__ref__, __vers__]
     
     return res
+
+def general_estract(__cadena__, __sub_start__, __sub_end__):
+    '''
+    Arroja una lista de los valores de las etiquetas con atributos coincidentes con la subcadena.
+    '''
+    ocr = str(__cadena__).find(__sub_start__)
+    __cadena__ = str(__cadena__)[ocr + len(__sub_start__):]
+    __string__ = str(__cadena__)#.split(__sub_end__)[0]
+    
+    return __string__

@@ -18,7 +18,8 @@
     "biblequotes":[
         "settings/biblequotes/passages.txt",
         "settings/biblequotes/crossref.txt",
-        "settings/biblequotes/Sketch__.txt"
+        "settings/biblequotes/Sketch__.txt",
+        "settings/biblequotes/polls.txt"
     ],
     "exec": [
         [
@@ -48,14 +49,16 @@
                 "Proverbios",
                 "Abrir Webs",
                 "Extraer datos de pasaje",
-                "Extraer titulos"
+                "Extraer titulos",
+                "Extraer encuesta"
             ],
             "acciones": [
                 "web_assistance/labuenasemilla.py",
                 "web_assistance/proverbios.py",
                 "web_assistance/web_assinstance.py",
                 "web_assistance/web_search.py",
-                "web_assistance/Scketch__.py"
+                "web_assistance/Scketch__.py",
+                "web_assistance/polls.py"
             ]
         },
         "table_creator":
