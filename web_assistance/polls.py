@@ -39,11 +39,12 @@ for i in options:
         url_polls.append(extract_str)
 
 
+print(url_polls)
 
-r_quest     = requests.get(url_polls[0]                     )
-bs0         = BeautifulSoup(r_quest.text, 'html.parser'     )
+# r_quest     = requests.get(url_polls[0]                     )
+# bs0         = BeautifulSoup(r_quest.text, 'html.parser'     )
 
-js_questions = bs0.find('script').getText
+# js_questions = bs0.find('script').getText
 
 # print(js_questions)
 
@@ -52,10 +53,10 @@ js_questions = bs0.find('script').getText
 # sub_end = '}'
 # questions = general_estract(cadena, sub_start, sub_end)
 
-# -------------------------------------
-# Actualizar polls
-# -------------------------------------
-string = str(js_questions)
-with open(file, 'w', encoding='utf-8') as f:
-    f.write(string)
-f.close()
+# # -------------------------------------
+# # Actualizar polls
+# # -------------------------------------
+# string = str(js_questions)
+# with open(file, 'w', encoding='utf-8') as f:
+#     f.write(string)
+# f.close()
