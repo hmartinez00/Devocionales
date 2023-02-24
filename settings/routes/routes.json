@@ -50,7 +50,7 @@
                 "Abrir Webs",
                 "Extraer datos de pasaje",
                 "Extraer titulos",
-                "Extraer encuesta"
+                "Extraer enlaces"
             ],
             "acciones": [
                 "web_assistance/labuenasemilla.py",
@@ -58,7 +58,7 @@
                 "web_assistance/web_assinstance.py",
                 "web_assistance/web_search.py",
                 "web_assistance/Scketch__.py",
-                "web_assistance/polls.py"
+                "web_assistance/links.py"
             ]
         },
         "table_creator":
