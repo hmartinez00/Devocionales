@@ -67,7 +67,7 @@
             "opciones": [
                 "Crear tabla",
                 "Mostrar tabla",
-                "Insertar tabla"
+                "Insertar DataFrame"
             ],
             "acciones": [
                 "table_creator/crear_tabla.py",

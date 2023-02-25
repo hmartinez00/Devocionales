@@ -5,14 +5,15 @@ from General_Utilities.option_list import option_list
 from modules.insertar_module import importar
 
 
-def redef_tupla(__tupla__):
+def redef_tupla(__tupla__, index):
     from General_Utilities.fecha import FechaID
     N_tupla = []
+
     for i in range(len(__tupla__)):
         j = __tupla__[i]
-        if i == 1:
+        if i == index:
             N_tupla.append(FechaID(j))
-        elif i > 1:
+        elif i != index:
             N_tupla.append(j)        
     
     N_tupla = tuple(N_tupla)
@@ -21,24 +22,20 @@ def redef_tupla(__tupla__):
 
 
 database = r"2tim4_1.db"
+archivo = r'C:\Users\admin\Documents\Estudios Biblicos\Plan Biblico Familiar\lectura 52 semanas.xlsm'
 
 key = 'tables'
 tables = setting_routes(key)
 ruta_archivo_json = option_list(tables)
 table = str(ruta_archivo_json).split('/')[-1].split('.')[0]
 
-print(table)
-
-# val = ('a', 'a', 'a', 'a', 'a', 'a', 'a')
-# insert(database, table, val)
-# print(get_column_names(database, table))
-
-
-archivo = r'C:\Users\admin\Documents\Estudios Biblicos\Plan Biblico Familiar\lectura 52 semanas.xlsm'
-
 df = pd.read_excel(archivo, sheet_name='Lectura diaria').fillna('')
 
-# for i in range(len(df)):
-rows = redef_tupla(tuple(df.iloc[0]))
-print(rows)
-insert(database, table, rows)
+for i in range(len(df)):
+    tupla = tuple(df.iloc[i])[1:]
+    rows = redef_tupla(tupla, 0)
+    avance = (i / len(df)) * 100
+    print(avance, end='\r')
+    insert(database, table, rows)
+
+print(selectall(database, table))

@@ -13,7 +13,6 @@ with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
 
 dict = {}
 dict['Id'] = 'PRIMARY'
-dict['Nro'] = 'TEXT'
 dict['Fecha'] = 'TEXT'
 dict['Lectura'] = 'TEXT'
 dict['Titulo'] = 'TEXT'
