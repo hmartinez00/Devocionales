@@ -14,10 +14,6 @@ with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
 dict = {}
 dict['Id'] = 'PRIMARY'
 dict['Fecha'] = 'TEXT'
-dict['Lectura'] = 'TEXT'
-dict['Titulo'] = 'TEXT'
-dict['Intro'] = 'TEXT'
-dict['Encuesta'] = 'TEXT'
 
 
 drop_table(database, table)

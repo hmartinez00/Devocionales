@@ -5,10 +5,10 @@
     "tables": [
         "settings/tables/aguas_vivas_comentarios.json",
         "settings/tables/aguas_vivas_pasajes.json",
-        "settings/tables/plan_biblia_52.json",
         "settings/tables/preguntas_la_buena_semilla.json",
         "settings/tables/preguntas_lecturas.json",
-        "settings/tables/proverbios.json"
+        "settings/tables/proverbios.json",
+        "settings/tables/plan_biblia_52.json"
     ],
     "voice": [
         "settings/voice/voice_comand_settings.json"
