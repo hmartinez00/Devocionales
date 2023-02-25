@@ -10,20 +10,27 @@ from modules.info_tools import general_estract
 # Extraemos los datos de la url
 # -------------------------------------
 url_list = [
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Genesis%201-11.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Genesis%2012-27.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Genesis%2028-37.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Genesis%2038-50.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Exodo%201-15.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Exodo%2016-40.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Levitico%201-14.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Levitico%2015-27.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Numeros%201-11.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Numeros%2012-21.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Numeros%2022-36.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Deuteronomio%201-13.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Deuteronomio%2014-21.htm",
-    "http://www.doinggood.org/BibleQuizzesQFSpSound/Old%20Testament/Deuteronomio%2022-34.htm"
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Isaias%201-22.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Isaias%2023-44.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Isaias%2045-66.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Jeremias%201-17.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Jeremias%2018-31.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Jeremias%2032-52.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Lamentaciones.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Ezequiel%201-21.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Ezequiel%2022-48.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MajorProphets/Daniel.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Oseas.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Joel.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Amos.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Abdias.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Miqueas.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Nahum.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Habacuc.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Sofonias.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Hageo.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Zacarias.htm",
+    "http://www.doinggood.org/BibleQuizzesQFSpSound/MinorProphets/Malaquias.htm"
 ]
 
 

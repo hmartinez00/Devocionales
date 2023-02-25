@@ -5,6 +5,7 @@
     "tables": [
         "settings/tables/aguas_vivas_comentarios.json",
         "settings/tables/aguas_vivas_pasajes.json",
+        "settings/tables/plan_biblia_52.json",
         "settings/tables/preguntas_la_buena_semilla.json",
         "settings/tables/preguntas_lecturas.json",
         "settings/tables/proverbios.json"
@@ -65,10 +66,12 @@
         {
             "opciones": [
                 "Crear tabla",
+                "Mostrar tabla",
                 "Insertar tabla"
             ],
             "acciones": [
                 "table_creator/crear_tabla.py",
+                "table_creator/show_table.py",
                 "table_creator/insertar_excel.py"
             ]
         }

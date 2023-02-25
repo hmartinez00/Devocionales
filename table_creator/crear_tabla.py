@@ -13,14 +13,12 @@ with open(ruta_archivo_json, 'w', encoding='utf8') as archivo_json:
 
 dict = {}
 dict['Id'] = 'PRIMARY'
-dict['Semana'] = 'TEXT'
-dict['Lunes'] = 'TEXT'
-dict['Martes'] = 'TEXT'
-dict['Miercoles'] = 'TEXT'
-dict['Jueves'] = 'TEXT'
-dict['Viernes'] = 'TEXT'
-dict['Sabado'] = 'TEXT'
-dict['Domingo'] = 'TEXT'
+dict['Nro'] = 'TEXT'
+dict['Fecha'] = 'TEXT'
+dict['Lectura'] = 'TEXT'
+dict['Titulo'] = 'TEXT'
+dict['Intro'] = 'TEXT'
+dict['Encuesta'] = 'TEXT'
 
 
 drop_table(database, table)
