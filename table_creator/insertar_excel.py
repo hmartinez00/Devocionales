@@ -29,17 +29,14 @@ tables = setting_routes(key)
 ruta_archivo_json = option_list(tables)
 table = str(ruta_archivo_json).split('/')[-1].split('.')[0]
 
-df = pd.read_excel(archivo, sheet_name='polls').fillna('')
+df = pd.read_excel(archivo, sheet_name='Lectura diaria').fillna('')
 
-rows = ('1','a')
-insert(database, table, rows)
+for i in range(len(df)):
+    tupla = tuple(df.iloc[i])[1:]
+    rows = redef_tupla(tupla, 0)
+    # print(rows)
+    avance = (i / len(df)) * 100
+    print(avance, end='\r')
+    insert(database, table, rows)
 
-# for i in range(len(df)):
-#     tupla = tuple(df.iloc[i])#[1:]
-#     rows = redef_tupla(tupla, 1)
-#     # print(rows)
-#     avance = (i / len(df)) * 100
-#     print(avance, end='\r')
-#     insert(database, table, rows)
-
-# print(selectall(database, table))
+print(selectall(database, table))

@@ -48,6 +48,7 @@
             "opciones": [
                 "La buena semilla",
                 "Proverbios",
+                "Plan de Lectura",
                 "Abrir Webs",
                 "Extraer datos de pasaje",
                 "Extraer titulos",
@@ -56,6 +57,7 @@
             "acciones": [
                 "web_assistance/labuenasemilla.py",
                 "web_assistance/proverbios.py",
+                "web_assistance/polls.py",
                 "web_assistance/web_assinstance.py",
                 "web_assistance/web_search.py",
                 "web_assistance/Scketch__.py",
