@@ -1,0 +1,98 @@
+<Actividad>
+    <instruccion_general>
+        PAST CONTINUOUS / PROGRESSIVE
+        EXERCISE
+
+        1. When she called, I (to be) ____ TV.
+        2. While we (have) ____ a picnic, it started to rain.
+        3. 1 (listen) ____ with headphones, so I didn’t hear the phone.
+        4. “What (do) ____ when you broke your arm?” “I (run) ____ after a bus.”
+        5. Last night at 8,1 (eat) ____ dinner.
+        6. At this time yesterday, I (look) ____ out my window, watching snow fall.
+        7. 1 (drive) ____ after midnight last night, and I was so tired.
+        8. Really, you (shop) ____ online all day yesterday?
+        9. While you ____ (sit) around all night watching TV, I (study) ____ English verb tenses.
+        10. What were you doing last Sunday? I (bake) ____ six cherry pies.
+
+    </instruccion_general>
+    <instrucciones_especificas>
+        Sustituye las cadenas de caracteres "____" asociadas a esta actividad por un contenido apropiado a lo que se solicita en la instruccion general, subrayado!
+
+        No quites los parentesis ni su contenido.
+    </instrucciones_especificas>
+</Actividad>
+
+<Actividad>
+    <instruccion_general>
+        Past continuous
+
+        Write the correct -ing form (having)
+
+        1. live ____
+        2. run ____
+        3. give ____
+        4. swim ____
+        5. lie ____
+        6. sil ____
+        7. travel ____
+
+        Make a positive sentence
+        1. you / play / cards ____
+        2. Alice / walk / around the lake ____
+        3. Carón / listen / to the radio ____
+        4. we / read / a book about Australia ____
+        5. Linda / look for / her ring ____
+        6. Fiona and Sam / visit / the castle ____
+        7. Ben / wash / the car ____
+        8. Kim and I / wait / in the park ____
+
+        Make a negative sentence
+        1. Sarah and Luke / not / work ____
+        2. Mister Miller / not / teach / chemistry ____
+        3. Barry / not / drive / a lorry ____
+        4. Mandy / not / have / lunch ____
+        5. Albert / not / play / tennis ____
+
+    </instruccion_general>
+    <instrucciones_especificas>
+        Sustituye las cadenas de caracteres "____" asociadas a esta actividad por un contenido apropiado a lo que se solicita en la instruccion general, subrayado!
+
+        No quites los parentesis ni su contenido.
+        No repitas las instrucciones, ni las etiquetas XML. Solo arroja la respuesta al ejercicio.
+        Subraya las palabras que vas añadiendo para resolver el ejercicio para poder identificarlas.
+    </instrucciones_especificas>
+</Actividad>
+
+<Actividad>
+    <instruccion_general>
+        PAST CONTINUOUS TENSE
+        Complete the following sentences and questions using the verbs in the past continuous correctly. Good luck! ©
+
+        1.  A: ____ your sisters ____ (watch) TV at midnight?
+            B: No. they ____.
+        2. ____ We ____ (eat) lunch In the cafetería at noon.
+        3. ____ you ____ (talk) on the phone a few minutes ago?
+        4. I ____ (walk) home when I saw the car accident.
+        5. My classmate and I ____ (study) together at the library.
+        6. David ____ (clean) the house and we ____ (cook).
+        7.  A: What ____ you ____ (do) at one o’clock?
+            B: I ____ (sleep) when you arrived.
+        8. The car engine ____ (not work), so I had to fix it.
+        9.  A: ____ you ____ (listen) to the teacher?
+            B: Yes. I was.
+        10. At seven o'clock. Mr. Smith ____ (rob) the bank.
+        11. Steven ____ (not do) his homework, he was playing with his friends.
+        12. It ____ (rain) last night, so I took my umbrella.
+        13. Anne ____ (study) in London last year.
+        14. I ____ (work) as a teacher when I first met your mother.
+        15. We ____ (swim) and you ____ (sit) on the floor.
+
+    </instruccion_general>
+    <instrucciones_especificas>
+        Sustituye las cadenas de caracteres "____" asociadas a esta actividad por un contenido apropiado a lo que se solicita en la instruccion general, subrayado!
+
+        No quites los parentesis ni su contenido.
+        No repitas las instrucciones, ni las etiquetas XML. Solo arroja la respuesta al ejercicio.
+        Subraya las palabras que vas añadiendo para resolver el ejercicio para poder identificarlas.
+    </instrucciones_especificas>
+</Actividad>
