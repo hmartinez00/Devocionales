@@ -30,7 +30,7 @@ fecha = input('Introduzca fecha: ')
 
 ahora = format_FechaID(fecha)
 
-for i in range(1):
+for i in range(6):
     print(DeltaT(ahora, -i))
     Fecha = DeltaT(ahora, -i)
 
