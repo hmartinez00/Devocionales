@@ -657,6 +657,7 @@
             "11": "Bienaventurados sois cuando por mi causa os vituperen y os persigan, y digan toda clase de mal contra vosotros, mintiendo. 12 Gozaos y alegraos, porque vuestro galard\u00f3n es grande en los cielos; porque as\u00ed persiguieron a los profetas que fueron antes de vosotros. "
         }
     },
+<<<<<<< HEAD
     "2023-05-03": {
         "Tit": "Mateo 5:14-16 - Reina-Valera 1960",
         "Sub": "La luz del mundo",
@@ -669,6 +670,13 @@
         "Sub": "Jes\u00fas y la ley",
         "Tex": {
             "19": "De manera que cualquiera que quebrante uno de estos mandamientos muy peque\u00f1os, y as\u00ed ense\u00f1e a los hombres, muy peque\u00f1o ser\u00e1 llamado en el reino de los cielos; mas cualquiera que los haga y los ense\u00f1e, este ser\u00e1 llamado grande en el reino de los cielos. 20 Porque os digo que si vuestra justicia no fuere mayor que la de los escribas y fariseos, no entrar\u00e9is en el reino de los cielos. "
+=======
+    "2023-05-02": {
+        "Tit": "Mateo 5:13 - Reina-Valera 1960",
+        "Sub": "La sal de la tierra",
+        "Tex": {
+            "13": "Vosotros sois la sal de la tierra; pero si la sal se desvaneciere, \u00bfcon qu\u00e9 ser\u00e1 salada? No sirve m\u00e1s para nada, sino para ser echada fuera y hollada por los hombres. "
+>>>>>>> 3b04d7151a6c5aa55f03a7d1cbc086ad5975ac11
         }
     }
 }
