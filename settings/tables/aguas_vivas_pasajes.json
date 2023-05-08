@@ -657,7 +657,13 @@
             "11": "Bienaventurados sois cuando por mi causa os vituperen y os persigan, y digan toda clase de mal contra vosotros, mintiendo. 12 Gozaos y alegraos, porque vuestro galard\u00f3n es grande en los cielos; porque as\u00ed persiguieron a los profetas que fueron antes de vosotros. "
         }
     },
-<<<<<<< HEAD
+    "2023-05-02": {
+        "Tit": "Mateo 5:13 - Reina-Valera 1960",
+        "Sub": "La sal de la tierra",
+        "Tex": {
+            "13": "Vosotros sois la sal de la tierra; pero si la sal se desvaneciere, \u00bfcon qu\u00e9 ser\u00e1 salada? No sirve m\u00e1s para nada, sino para ser echada fuera y hollada por los hombres. "
+        }
+    },
     "2023-05-03": {
         "Tit": "Mateo 5:14-16 - Reina-Valera 1960",
         "Sub": "La luz del mundo",
@@ -670,13 +676,48 @@
         "Sub": "Jes\u00fas y la ley",
         "Tex": {
             "19": "De manera que cualquiera que quebrante uno de estos mandamientos muy peque\u00f1os, y as\u00ed ense\u00f1e a los hombres, muy peque\u00f1o ser\u00e1 llamado en el reino de los cielos; mas cualquiera que los haga y los ense\u00f1e, este ser\u00e1 llamado grande en el reino de los cielos. 20 Porque os digo que si vuestra justicia no fuere mayor que la de los escribas y fariseos, no entrar\u00e9is en el reino de los cielos. "
-=======
-    "2023-05-02": {
-        "Tit": "Mateo 5:13 - Reina-Valera 1960",
-        "Sub": "La sal de la tierra",
+        }
+    },
+    "2023-05-05": {
+        "Tit": "Mateo 5:21-25 - Reina-Valera 1960",
+        "Sub": "Jes\u00fas y la ira",
         "Tex": {
-            "13": "Vosotros sois la sal de la tierra; pero si la sal se desvaneciere, \u00bfcon qu\u00e9 ser\u00e1 salada? No sirve m\u00e1s para nada, sino para ser echada fuera y hollada por los hombres. "
->>>>>>> 3b04d7151a6c5aa55f03a7d1cbc086ad5975ac11
+            "23": "Por tanto, si traes tu ofrenda al altar, y all\u00ed te acuerdas de que tu hermano tiene algo contra ti, 24 deja all\u00ed tu ofrenda delante del altar, y anda, reconc\u00edliate primero con tu hermano, y entonces ven y presenta tu ofrenda. 25 Ponte de acuerdo con tu adversario pronto, entre tanto que est\u00e1s con \u00e9l en el camino, no sea que el adversario te entregue al juez, y el juez al alguacil, y seas echado en la c\u00e1rcel. "
+        }
+    },
+    "2023-05-06": {
+        "Tit": "Mateo 5:27-30 - Reina-Valera 1960",
+        "Sub": "Jes\u00fas y el adulterio",
+        "Tex": {
+            "29": "Por tanto, si tu ojo derecho te es ocasi\u00f3n de caer, s\u00e1calo, y \u00e9chalo de ti; pues mejor te es que se pierda uno de tus miembros, y no que todo tu cuerpo sea echado al infierno. 30 Y si tu mano derecha te es ocasi\u00f3n de caer, c\u00f3rtala, y \u00e9chala de ti; pues mejor te es que se pierda uno de tus miembros, y no que todo tu cuerpo sea echado al infierno. "
+        }
+    },
+    "2023-05-07": {
+        "Tit": "Mateo 5:31-32 - Reina-Valera 1960",
+        "Sub": "Jes\u00fas y el divorcio",
+        "Tex": {
+            "31": "Tambi\u00e9n fue dicho: Cualquiera que repudie a su mujer, dele carta de divorcio. 32 Pero yo os digo que el que repudia a su mujer, a no ser por causa de fornicaci\u00f3n, hace que ella adultere; y el que se casa con la repudiada, comete adulterio. "
+        }
+    },
+    "2023-05-08": {
+        "Tit": "Mateo 5:33-37 - Reina-Valera 1960",
+        "Sub": "Jes\u00fas y los juramentos",
+        "Tex": {
+            "36": "Ni por tu cabeza jurar\u00e1s, porque no puedes hacer blanco o negro un solo cabello. 37 Pero sea vuestro hablar: S\u00ed, s\u00ed; no, no; porque lo que es m\u00e1s de esto, de mal procede. "
+        }
+    },
+    "2023-05-09": {
+        "Tit": "Mateo 5:38-48 - Reina-Valera 1960",
+        "Sub": "El amor hacia los enemigos",
+        "Tex": {
+            "38": "O\u00edsteis que fue dicho: Ojo por ojo, y diente por diente. 39 Pero yo os digo: No resist\u00e1is al que es malo; antes, a cualquiera que te hiera en la mejilla derecha, vu\u00e9lvele tambi\u00e9n la otra; 40 y al que quiera ponerte a pleito y quitarte la t\u00fanica, d\u00e9jale tambi\u00e9n la capa; 41 y a cualquiera que te obligue a llevar carga por una milla, ve con \u00e9l dos. 42 Al que te pida, dale; y al que quiera tomar de ti prestado, no se lo reh\u00fases. "
+        }
+    },
+    "2023-05-10": {
+        "Tit": "Mateo 5:38-48 - Reina-Valera 1960",
+        "Sub": "El amor hacia los enemigos",
+        "Tex": {
+            "46": "Porque si am\u00e1is a los que os aman, \u00bfqu\u00e9 recompensa tendr\u00e9is? \u00bfNo hacen tambi\u00e9n lo mismo los publicanos? 47 Y si salud\u00e1is a vuestros hermanos solamente, \u00bfqu\u00e9 hac\u00e9is de m\u00e1s? \u00bfNo hacen tambi\u00e9n as\u00ed los gentiles? 48 Sed, pues, vosotros perfectos, como vuestro Padre que est\u00e1 en los cielos es perfecto. "
         }
     }
 }
