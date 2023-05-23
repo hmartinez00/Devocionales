@@ -756,6 +756,7 @@
             "13": "Porque juicio sin misericordia se har\u00e1 con aquel que no hiciere misericordia; y la misericordia triunfa sobre el juicio. "
         }
     },
+<<<<<<< HEAD
     "2023-05-23": {
         "Tit": "Mateo 6:25-33 - Reina-Valera 1960",
         "Sub": "El af\u00e1n y la ansiedad",
@@ -775,6 +776,13 @@
         "Sub": "El af\u00e1n y la ansiedad",
         "Tex": {
             "31": "No os afan\u00e9is, pues, diciendo: \u00bfQu\u00e9 comeremos, o qu\u00e9 beberemos, o qu\u00e9 vestiremos? 32 Porque los gentiles buscan todas estas cosas; pero vuestro Padre celestial sabe que ten\u00e9is necesidad de todas estas cosas. 33 Mas buscad primeramente el reino de Dios y su justicia, y todas estas cosas os ser\u00e1n a\u00f1adidas. "
+=======
+    "2023-05-22": {
+        "Tit": "Mateo 6:24 - Reina-Valera 1960",
+        "Sub": "Dios y las riquezas",
+        "Tex": {
+            "24": "Ninguno puede servir a dos se\u00f1ores; porque o aborrecer\u00e1 al uno y amar\u00e1 al otro, o estimar\u00e1 al uno y menospreciar\u00e1 al otro. No pod\u00e9is servir a Dios y a las riquezas. "
+>>>>>>> c36c472af706aa2d1e8c79a2e4476c9795169cca
         }
     }
 }
