@@ -1,7 +1,15 @@
-from General_Utilities.control_rutas import setting_routes
+import os
+from tkinter import filedialog
 from Eliezer.voice import recognizer
 
 
-key = 'voice'
-ruta_archivo_json = setting_routes(key)[0]
-recognizer(ruta_archivo_json)
+ruta = os.getcwd()
+name = 'voice_comand_settings.json'
+for ruta, _, archivos in os.walk('.'):
+    for archivo in archivos:
+        if archivo == name:
+            ruta_archivo_json = os.path.join(ruta, archivo)
+
+file = filedialog.askopenfilename()
+
+recognizer(ruta_archivo_json, file)
